@@ -31,8 +31,11 @@ bool Renderable::init()
     OBJResult objr = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
     load_mesh_to_map(objr, "sphere_0");
 
-    OBJResult objr_g = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
-    load_mesh_to_map(objr_g, "sphere_1");
+    OBJResult objr_1 = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
+    load_mesh_to_map(objr_1, "sphere_1");
+
+    OBJResult objr_2 = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
+    load_mesh_to_map(objr_2, "sphere_2");
 
 
     /*
@@ -113,13 +116,38 @@ bool Renderable::render(ShaderProgram& sp)
         glm::vec3 mov_v = glm::vec3 (-0.5 , 0.0, 0.0);
         this->setPosition(mov_v);
 
-        glm::vec3 scale_vec = glm::vec3(0.5, 0.5, 0.5);
+        glm::vec3 scale_vec = glm::vec3(0.3, 0.3, 0.3);
         this->setScale(scale_vec );
 
         setMat4("model_m", this->getTransformMatrix(), sp);
 
         itr->second.get()->render();
     }
+
+
+    auto it_2 = this->mesh_map.equal_range("sphere_2");
+
+    // itr.first, itr.second
+    for (auto itr = it_2.first; itr != it_2.second; ++itr) {
+
+        //std::cout << "render" << std::endl;
+        //init_trans_sphere(sp, itr->second );
+
+        glm::vec3 mov_v = glm::vec3 (0.5 , 0.0, 0.0);
+        this->setPosition(mov_v);
+
+        glm::vec3 scale_vec = glm::vec3(0.3, 0.3, 0.3);
+        this->setScale(scale_vec );
+
+        setMat4("model_m", this->getTransformMatrix(), sp);
+
+        itr->second.get()->render();
+    }
+
+
+
+
+
 
 
     /*
