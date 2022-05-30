@@ -49,6 +49,9 @@ public:
     void set_parent(std::shared_ptr<Mesh> &parent) {this->parent = parent;}
     void get_parent(std::shared_ptr<Mesh> &parent) {parent = this->parent;}
 
+
+
+
     GLfloat move_x = 0;
     GLfloat move_y = 0;
     GLfloat scale = 0;

@@ -277,7 +277,7 @@ void Scene::update(float dt)
         //select sphere and manipulate move_x
         rb.scale_meshes(-dt, "sphere_0", *this->m_shader);
     }
-    else if (m_window->getInput().getKeyState(Key::N) == KeyState::Pressed)
+    else if (m_window->getInput().getKeyState(Key::G) == KeyState::Pressed)
     {
         //select sphere and manipulate move_x
         rb.rotate_meshes(dt, "sphere_0", *this->m_shader);
@@ -286,6 +286,7 @@ void Scene::update(float dt)
     else if (m_window->getInput().getKeyState(Key::F) == KeyState::Pressed)
     {
         //select sphere and manipulate move_x
+        rb.rotate_meshes(-dt, "sphere_0", *this->m_shader);
 
     }
 }

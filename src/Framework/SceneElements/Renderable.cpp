@@ -37,6 +37,34 @@ bool Renderable::init()
     OBJResult objr_2 = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
     load_mesh_to_map(objr_2, "sphere_2");
 
+    OBJResult objr_g = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/ground.obj" , false, false);
+    load_mesh_to_map(objr_g, "ground");
+
+
+    auto it = this->mesh_map.equal_range("sphere_1");
+
+    // itr.first, itr.second
+    for (auto itr_1 = it.first; itr_1 != it.second; ++itr_1) {
+
+        auto it_0 = this->mesh_map.equal_range("sphere_0");
+        for (auto itr = it_0.first; itr != it_0.second; ++itr)
+        {
+            itr_1->second.get()->set_parent(itr->second);
+        }
+    }
+
+    auto it_2 = this->mesh_map.equal_range("sphere_2");
+
+    // itr.first, itr.second
+    for (auto itr_1 = it_2.first; itr_1 != it_2.second; ++itr_1) {
+
+        auto it_0 = this->mesh_map.equal_range("sphere_0");
+        for (auto itr = it_0.first; itr != it_0.second; ++itr)
+        {
+            itr_1->second.get()->set_parent(itr->second);
+        }
+    }
+
 
     /*
     objlMeshes = objr.objects[0].meshes;
@@ -78,7 +106,7 @@ bool Renderable::init_trans_sphere(ShaderProgram& sp, std::shared_ptr<Mesh> mesh
     glm::vec3 mov_v = glm::vec3 (mesh.get()->move_x , mesh.get()->move_y, 0.0);
     this->setPosition(mov_v);
 
-    glm::quat rot_vet = glm::quat(mesh.get()->rotate , 1, 0, 0);
+    glm::quat rot_vet = glm::quat(mesh.get()->rotate , 0, 0, 1);
     this->setRotation(rot_vet);
   //  setMat4("model_m", this->getTransformMatrix(), sp);
   //  mesh.get()->render();
@@ -95,6 +123,11 @@ bool Renderable::render(ShaderProgram& sp)
 
     // itr.first, itr.second
     for (auto itr = it.first; itr != it.second; ++itr) {
+
+        //glm::quat rot_vet = glm::quat(itr->second.get()->rotate , 0, 1, 0);
+        //mesh.get()->rotate
+        //this->setRotation(rot_vet);
+
 
         //std::cout << "render" << std::endl;
         init_trans_sphere(sp, itr->second );
@@ -113,11 +146,26 @@ bool Renderable::render(ShaderProgram& sp)
         //std::cout << "render" << std::endl;
         //init_trans_sphere(sp, itr->second );
 
+        //parent first
+
+
         glm::vec3 mov_v = glm::vec3 (-0.5 , 0.0, 0.0);
         this->setPosition(mov_v);
 
         glm::vec3 scale_vec = glm::vec3(0.3, 0.3, 0.3);
         this->setScale(scale_vec );
+
+        glm::quat rot_vet = glm::quat(0 , 0, 0, 1);
+        this->setRotation(rot_vet);
+
+
+        std::shared_ptr<Mesh> parent;
+        itr->second.get()->get_parent(parent);
+
+        glm::vec3 mov_p = glm::vec3 (parent.get()->move_x , parent.get()->move_y , 0.0);
+        //this->setPosition(mov_p);
+        this->translate(mov_p);
+
 
         setMat4("model_m", this->getTransformMatrix(), sp);
 
@@ -139,6 +187,17 @@ bool Renderable::render(ShaderProgram& sp)
         glm::vec3 scale_vec = glm::vec3(0.3, 0.3, 0.3);
         this->setScale(scale_vec );
 
+        glm::quat rot_vet = glm::quat(0 , 0, 0, 1);
+        this->setRotation(rot_vet);
+
+        //parent first
+        std::shared_ptr<Mesh> parent;
+        itr->second.get()->get_parent(parent);
+
+        glm::vec3 mov_p = glm::vec3 (parent.get()->move_x , parent.get()->move_y , 0.0);
+        //this->setPosition(mov_p);
+        this->translateLocal(mov_p);
+
         setMat4("model_m", this->getTransformMatrix(), sp);
 
         itr->second.get()->render();
@@ -146,7 +205,19 @@ bool Renderable::render(ShaderProgram& sp)
 
 
 
+    auto it_ground = this->mesh_map.equal_range("ground");
 
+    // itr.first, itr.second
+    for (auto itr = it_ground.first; itr != it_ground.second; ++itr) {
+
+        //std::cout << "render" << std::endl;
+        //init_trans_sphere(sp, itr->second );
+        glm::vec3 pos = glm::vec3 (0.0 , 0.0, 0.0);
+        this->setPosition(pos);
+
+        setMat4("model_m", this->getTransformMatrix(), sp);
+        itr->second.get()->render();
+    }
 
 
 
