@@ -4,8 +4,383 @@
 
 #include "Renderable.h"
 
+Renderable::Renderable(OBJResult& obj)
+{
+
+    objlMeshes = obj.objects[0].meshes;
+
+    for (auto ele : objlMeshes)
+    {
+        OBJLoader::reverseWinding(ele);
+
+        std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(ele.vertices, ele.indices, ele.atts);
 
 
+        mesh.get()->init();
+
+        this->meshes.push_back(mesh);
+    }
+}
+
+Renderable::Renderable(OBJResult& obj, std::shared_ptr<Renderable> &parent)
+{
+    objlMeshes = obj.objects[0].meshes;
+
+    for (auto ele : objlMeshes)
+    {
+        OBJLoader::reverseWinding(ele);
+
+        std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(ele.vertices, ele.indices, ele.atts);
+
+        mesh.get()->init();
+
+        this->meshes.push_back(mesh);
+    }
+
+    this->set_parent(parent);
+}
+
+
+Renderable::Renderable(OBJResult& obj, bool reverse)
+{
+    objlMeshes = obj.objects[0].meshes;
+
+    for (auto ele : objlMeshes)
+    {
+        std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(ele.vertices, ele.indices, ele.atts);
+
+        mesh.get()->init();
+
+        this->meshes.push_back(mesh);
+    }
+}
+
+
+// renderable
+Renderable::Renderable(OBJResult& obj, glm::vec3 diffuse_colour,
+                       glm::vec3 specular_reflection, GLfloat shininess)
+{
+
+    //obj.objects.at(0).meshes.size()
+
+    std::cout << "obj meshes count: " << obj.objects.size() << std::endl;
+
+    objlMeshes = obj.objects[0].meshes;
+
+    std::cout << "======== obj meshes size: " << obj.objects.at(0).meshes.size() << std::endl;
+
+    for (auto ele : objlMeshes)
+    {
+        //OBJLoader::reverseWinding(ele);
+
+        //with colour, specular and shininess
+        std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(ele.vertices, ele.indices, ele.atts,
+                                                            diffuse_colour,
+                                                            specular_reflection,
+                                                            shininess
+                                                            );
+
+        mesh.get()->init();
+
+        this->meshes.push_back(mesh);
+    }
+
+
+
+
+}
+
+Renderable::Renderable(OBJResult& obj, std::vector<Material> &materials)
+{
+    objlMeshes = obj.objects[0].meshes;
+
+    size_t mat_counter = 0;
+    for (auto ele : objlMeshes)
+    {
+        std::shared_ptr<Mesh> mesh = std::make_shared<Mesh>(ele.vertices, ele.indices, ele.atts);
+
+        //set Material
+        mesh->set_Material(materials.at(mat_counter) );
+
+
+        mesh.get()->init();
+
+        this->meshes.push_back(mesh);
+
+        mat_counter++;
+    }
+}
+
+
+
+/// render all meshes. Set all translations and then render all meshes
+/// \return
+bool Renderable::render(ShaderProgram& sp)
+{
+    for (auto& mesh: meshes)
+    {
+        mesh->render();
+    }
+
+    return true;
+}
+
+//render and send diffuse, specular and shininess to shader
+/*
+bool Renderable::render_shader(ShaderProgram & sp)
+{
+    //if (this->parent.get() != nullptr)
+      //  this->setMatrix(this->parent.get()->getMatrix() * this->getTransformMatrix() );
+
+
+    for (auto& mesh: meshes)
+    {
+        mesh->render();
+
+        setVec3("matDiffuse", mesh->diffuse_colour, sp);
+
+        setVec3("matSpecular", mesh->specular_reflection, sp);
+
+        setFloat("shininess", mesh->shininess, sp);
+    }
+    return true;
+}
+ */
+
+//render and send diffuse, specular and shininess to shader
+bool Renderable::render_with_texture(ShaderProgram & sp)
+{
+    //if (this->parent.get() != nullptr)
+    //  this->setMatrix(this->parent.get()->getMatrix() * this->getTransformMatrix() );
+
+
+    //for 0 and 2 materials.
+
+    std::cout << "render" << std::endl;
+
+    /*
+    size_t mat_index = 0;
+    for (const auto& mesh : meshes)
+    {
+        Material temp_mat;
+        mesh->get_Material(temp_mat);
+
+
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, temp_mat.diffuse_id);
+
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, temp_mat.emissive_id );
+
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, temp_mat.spec_id);
+    }
+    */
+
+
+    //glActiveTexture(GL_TEXTURE0);
+    //glBindTexture(GL_TEXTURE_2D, t1);
+
+    //Material temp_mat;
+    //meshes.at(0)->get_Material(temp_mat);
+
+    //glActiveTexture(GL_TEXTURE0);
+    //glBindTexture(GL_TEXTURE_2D, t3);
+
+
+
+
+    /*
+    for (const auto& mat : material_ptrs)
+    {
+        std::cout << "set uniform" << std::endl;
+
+
+        setInt("material.diffuse", 0 + sp.getFreeTU(),  sp);
+        glActiveTexture(GL_TEXTURE0 + sp.getCurrentTU() );
+        glBindTexture(GL_TEXTURE_2D, mat->diffuse_id);
+
+        setInt("material.emissive", 0 + sp.getFreeTU(),  sp);
+        glActiveTexture(GL_TEXTURE0 + sp.getCurrentTU());
+        glBindTexture(GL_TEXTURE_2D, mat->emissive_id );
+
+        setInt("material.specular", 0 + sp.getFreeTU(),   sp);
+        glActiveTexture(GL_TEXTURE0 + sp.getCurrentTU());
+        glBindTexture(GL_TEXTURE_2D, mat->spec_id);
+
+
+        setFloat("material.shininess", mat->shininess, sp);
+        setFloat("material.texMulti", mat->texMulti, sp);
+
+
+
+        std::cout << "activate texture" << std::endl;
+
+
+    }
+    */
+
+
+    /*
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, t1);
+
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, t2 );
+
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, t3);
+    */
+
+    std::cout << "mesh count: " << meshes.size() << std::endl;
+
+    for (auto& mesh: meshes)
+    {
+
+        setInt("material.diffuse", 0 + sp.getFreeTU(),  sp);
+        glActiveTexture(GL_TEXTURE0 + sp.getCurrentTU() );
+        glBindTexture(GL_TEXTURE_2D, mesh->material_ptr->diffuse_id);
+
+        setInt("material.emissive", 0 + sp.getFreeTU(),  sp);
+        glActiveTexture(GL_TEXTURE0 + sp.getCurrentTU());
+        glBindTexture(GL_TEXTURE_2D, mesh->material_ptr->emissive_id );
+
+        setInt("material.specular", 0 + sp.getFreeTU(),   sp);
+        glActiveTexture(GL_TEXTURE0 + sp.getCurrentTU());
+        glBindTexture(GL_TEXTURE_2D, mesh->material_ptr->spec_id);
+
+
+        setFloat("material.shininess", mesh->material_ptr->shininess, sp);
+        setFloat("material.texMulti", mesh->material_ptr->texMulti, sp);
+
+        mesh->render(sp);
+    }
+
+
+    /*
+    if (materials.size() >= 2)
+    {
+
+        std::cout << "cycle" << std::endl;
+
+        size_t counter = 0;
+        for (auto& mesh: meshes)
+        {
+
+            mesh->set_Material(materials.at(counter));
+
+            mesh->render(sp);
+
+            //setMaterial("mat name", mesh.getMat, sp);
+            Material material;
+            mesh->get_Material(material);
+
+            setInt("material.diffuse", material.texture_diffuse.get_Tex_ID(), sp);
+            setInt("material.specular", material.texture_specular.get_Tex_ID(), sp);
+            setInt("material.emissive", material.texture_emissive.get_Tex_ID(), sp);
+
+            setFloat("material.shininess", material.shininess, sp);
+
+            counter++;
+
+        }
+    }
+    else if (materials.size() == 1)
+    {
+        std::cout << "ground" << std::endl;
+
+        for (auto& mesh: meshes) {
+
+
+            mesh->set_Material(materials.at(0));
+
+            mesh->render(sp);
+
+            //setMaterial("mat name", mesh.getMat, sp);
+            Material material;
+            mesh->get_Material(material);
+
+            setInt("material.diffuse", material.texture_diffuse.get_Tex_ID(), sp);
+            setInt("material.specular", material.texture_specular.get_Tex_ID(), sp);
+            setInt("material.emissive", material.texture_emissive.get_Tex_ID(), sp);
+
+            setFloat("material.shininess", material.shininess, sp);
+        }
+
+    }
+     */
+
+
+
+    return true;
+}
+
+
+
+bool Renderable::load_textures()
+{
+    /*
+   for (size_t i = 0; i <= materials.size(); i++)
+   {
+
+   }
+     */
+    //load_texture(t1, "assets/textures/ground/ground_diff.png");
+    load_texture(t1, "assets/textures/ground/container2.png");
+
+    load_texture(t2, "assets/textures/ground/ground_emit.png");
+
+    load_texture(t3, "assets/textures/ground/ground_spec.png");
+
+    return true;
+
+}
+
+int Renderable::load_texture(GLuint &id, std::string path)
+{
+    glGenTextures(1, &id);
+    glBindTexture(GL_TEXTURE_2D, id);
+
+    //============= �nderung f�r 2. Texture
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    int width, height, nrChannels;
+    //unsigned char* data = SOIL_load_image("resources/greymetal.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load(path.c_str(), &width, &height, &nrChannels, 0);
+
+    if (data) {
+        std::cout << "data is valid" << std::endl;
+
+        //The crash problem is probably caused by glTexImage2D reading past the bounds of your data buffer.
+
+        //glPixelStorei sets pixel storage modes that affect the operation of subsequent glReadPixels
+        //as well as the unpacking of texture patterns (see glTexImage2D and glTexSubImage2D).
+
+        //Specifies the alignment requirements for the start of each pixel row in memory. The allowable values are
+        //1 (byte-alignment), 2 (rows aligned to even-numbered bytes), 4 (word-alignment), and 8 (rows start on double-word boundaries).
+        glPixelStorei(GL_PACK_ALIGNMENT, 1);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else {
+        std::cout << "Failed to Texture" << std::endl;
+    }
+
+    stbi_image_free(data);
+
+    return 0;
+}
+
+
+
+
+
+/*
 bool Renderable::load_mesh_to_map(OBJResult& obj, std::string name)
 {
     std::vector<OBJMesh> obj_m = obj.objects[0].meshes;
@@ -23,78 +398,10 @@ bool Renderable::load_mesh_to_map(OBJResult& obj, std::string name)
 
     return true;
 }
+*/
 
 
-bool Renderable::init()
-{
-
-    OBJResult objr = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
-    load_mesh_to_map(objr, "sphere_0");
-
-    OBJResult objr_1 = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
-    load_mesh_to_map(objr_1, "sphere_1");
-
-    OBJResult objr_2 = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/sphere.obj" , false, false);
-    load_mesh_to_map(objr_2, "sphere_2");
-
-    OBJResult objr_g = OBJLoader::loadOBJ("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/assets/models/ground.obj" , false, false);
-    load_mesh_to_map(objr_g, "ground");
-
-
-    auto it = this->mesh_map.equal_range("sphere_1");
-
-    // itr.first, itr.second
-    for (auto itr_1 = it.first; itr_1 != it.second; ++itr_1) {
-
-        auto it_0 = this->mesh_map.equal_range("sphere_0");
-        for (auto itr = it_0.first; itr != it_0.second; ++itr)
-        {
-            itr_1->second.get()->set_parent(itr->second);
-        }
-    }
-
-    auto it_2 = this->mesh_map.equal_range("sphere_2");
-
-    // itr.first, itr.second
-    for (auto itr_1 = it_2.first; itr_1 != it_2.second; ++itr_1) {
-
-        auto it_0 = this->mesh_map.equal_range("sphere_0");
-        for (auto itr = it_0.first; itr != it_0.second; ++itr)
-        {
-            itr_1->second.get()->set_parent(itr->second);
-        }
-    }
-
-
-    /*
-    objlMeshes = objr.objects[0].meshes;
-
-    std::cout << "obj meshes number: " << objlMeshes.size() << std::endl;
-
-    //objlMeshes.insert(objlMeshes.end(), objr_g.objects[0].meshes.begin(), objr_g.objects[0].meshes.end() );
-
-    //für jedes objMesh: erstelle Mesh und füge es Renderable hinzu.
-    for(auto& ele : objlMeshes)
-    {
-        OBJLoader::reverseWinding(ele);
-
-        Mesh m(ele.vertices, ele.indices, ele.atts);
-
-        m.init();
-        this->add_mesh(m);
-    }
-    */
-    //===================================
-
-    /*
-    for (auto& mesh: this->meshes)
-    {
-        mesh.initE();
-    }
-    */
-    return true;
-}
-
+/*
 bool Renderable::init_trans_sphere(ShaderProgram& sp, std::shared_ptr<Mesh> mesh)
 {
     glm::vec3 scale_vec = glm::vec3(1 + mesh.get()->scale, 1 + mesh.get()->scale, 1 + mesh.get()->scale);
@@ -106,212 +413,18 @@ bool Renderable::init_trans_sphere(ShaderProgram& sp, std::shared_ptr<Mesh> mesh
     glm::vec3 mov_v = glm::vec3 (mesh.get()->move_x , mesh.get()->move_y, 0.0);
     this->setPosition(mov_v);
 
-    glm::quat rot_vet = glm::quat(mesh.get()->rotate , 0, 0, 1);
-    this->setRotation(rot_vet);
+    //glm::quat rot_vet = glm::quat(mesh.get()->rotate , 0, 0, 1);
+    //this->setRotation(rot_vet);
+
+    //transformObject.rotate(glm::quat(glm::vector3(xWinkel, yWinkel, zWinkel)));
+    //Angaben {x,y,z}Winkel direkt in Grad (als float).
+    this->rotate(glm::quat(glm::vec3(0, mesh.get()->rotate, 0)));
+
+
   //  setMat4("model_m", this->getTransformMatrix(), sp);
   //  mesh.get()->render();
 
     return true;
 
 }
-
-/// render all meshes
-/// \return
-bool Renderable::render(ShaderProgram& sp)
-{
-    auto it = this->mesh_map.equal_range("sphere_0");
-
-    // itr.first, itr.second
-    for (auto itr = it.first; itr != it.second; ++itr) {
-
-        //glm::quat rot_vet = glm::quat(itr->second.get()->rotate , 0, 1, 0);
-        //mesh.get()->rotate
-        //this->setRotation(rot_vet);
-
-
-        //std::cout << "render" << std::endl;
-        init_trans_sphere(sp, itr->second );
-
-        setMat4("model_m", this->getTransformMatrix(), sp);
-
-        itr->second.get()->render();
-    }
-
-
-    auto it_1 = this->mesh_map.equal_range("sphere_1");
-
-    // itr.first, itr.second
-    for (auto itr = it_1.first; itr != it_1.second; ++itr) {
-
-        //std::cout << "render" << std::endl;
-        //init_trans_sphere(sp, itr->second );
-
-        //parent first
-
-
-        glm::vec3 mov_v = glm::vec3 (-0.5 , 0.0, 0.0);
-        this->setPosition(mov_v);
-
-        glm::vec3 scale_vec = glm::vec3(0.3, 0.3, 0.3);
-        this->setScale(scale_vec );
-
-        glm::quat rot_vet = glm::quat(0 , 0, 0, 1);
-        this->setRotation(rot_vet);
-
-
-        std::shared_ptr<Mesh> parent;
-        itr->second.get()->get_parent(parent);
-
-        glm::vec3 mov_p = glm::vec3 (parent.get()->move_x , parent.get()->move_y , 0.0);
-        //this->setPosition(mov_p);
-        this->translate(mov_p);
-
-
-        setMat4("model_m", this->getTransformMatrix(), sp);
-
-        itr->second.get()->render();
-    }
-
-
-    auto it_2 = this->mesh_map.equal_range("sphere_2");
-
-    // itr.first, itr.second
-    for (auto itr = it_2.first; itr != it_2.second; ++itr) {
-
-        //std::cout << "render" << std::endl;
-        //init_trans_sphere(sp, itr->second );
-
-        glm::vec3 mov_v = glm::vec3 (0.5 , 0.0, 0.0);
-        this->setPosition(mov_v);
-
-        glm::vec3 scale_vec = glm::vec3(0.3, 0.3, 0.3);
-        this->setScale(scale_vec );
-
-        glm::quat rot_vet = glm::quat(0 , 0, 0, 1);
-        this->setRotation(rot_vet);
-
-        //parent first
-        std::shared_ptr<Mesh> parent;
-        itr->second.get()->get_parent(parent);
-
-        glm::vec3 mov_p = glm::vec3 (parent.get()->move_x , parent.get()->move_y , 0.0);
-        //this->setPosition(mov_p);
-        this->translateLocal(mov_p);
-
-        setMat4("model_m", this->getTransformMatrix(), sp);
-
-        itr->second.get()->render();
-    }
-
-
-
-    auto it_ground = this->mesh_map.equal_range("ground");
-
-    // itr.first, itr.second
-    for (auto itr = it_ground.first; itr != it_ground.second; ++itr) {
-
-        //std::cout << "render" << std::endl;
-        //init_trans_sphere(sp, itr->second );
-        glm::vec3 pos = glm::vec3 (0.0 , 0.0, 0.0);
-        this->setPosition(pos);
-
-        setMat4("model_m", this->getTransformMatrix(), sp);
-        itr->second.get()->render();
-    }
-
-
-
-    /*
-    for (auto m : this->mesh_map)
-    {
-        //std::cout << "render" << std::endl;
-        init_trans_sphere(sp, m.second);
-
-        setMat4("model_m", this->getTransformMatrix(), sp);
-        m.second.get()->render();
-    }
-    */
-
-    /*
-
-    int counter = 0;
-    for (auto& mesh: this->meshes)
-    {
-
-        if (counter == 0)
-        {
-            std::cout << "initial transf" << std::endl;
-
-            glm::vec3 scale_vec = glm::vec3(0.5, 0.5, 0.5);
-            this->setScale(scale_vec );
-
-            glm::vec3 pos_vec = glm::vec3 (0.8, 0.0, 0.0);
-            this->setPosition(pos_vec);
-
-            glm::vec3 mov_v = glm::vec3 (mesh.move_x , 0.0, 0.0);
-            this->setPosition(pos_vec);
-
-            setMat4("model_m", this->getTransformMatrix(), sp);
-
-            mesh.render();
-        }
-        else
-        {
-            std::cout << "other transforming" << std::endl;
-
-            glm::vec3 pos_vec = glm::vec3(-0.8, 0.0, 0.0);
-            this->setScale(pos_vec );
-
-            setMat4("model_m", this->getTransformMatrix(), sp);
-
-            mesh.render();
-        }
-
-        counter++;
-    }
-    */
-
-    return true;
-}
-
-void Renderable::move_meshes_x(GLfloat fl, std::string name, ShaderProgram& sp)
-{
-    auto it = this->mesh_map.equal_range(name);
-
-    for (auto itr = it.first; itr != it.second; ++itr)
-    {
-        itr->second.get()->move_x += fl;
-    }
-}
-
-void Renderable::move_meshes_y(GLfloat fl, std::string name, ShaderProgram& sp)
-{
-    auto it = this->mesh_map.equal_range(name);
-
-    for (auto itr = it.first; itr != it.second; ++itr)
-    {
-        itr->second.get()->move_y += fl;
-    }
-}
-
-void Renderable::scale_meshes(GLfloat fl, std::string name, ShaderProgram& sp)
-{
-    auto it = this->mesh_map.equal_range(name);
-
-    for (auto itr = it.first; itr != it.second; ++itr)
-    {
-        itr->second.get()->scale += fl;
-    }
-}
-
-
-
-void Renderable::rotate_meshes(GLfloat fl, std::string name, ShaderProgram& sp)
-{
-    auto it = this->mesh_map.equal_range(name);
-
-    for (auto itr = it.first; itr != it.second; ++itr)
-    {
-        itr->second.get()->rotate += fl;
-    }
-}
+*/

@@ -11,88 +11,141 @@
 #include "OBJLoader.h"
 #include "Transform.h"
 #include "ShaderProgram.h"
+#include "Material.h"
+
+#include <libheaders.h>
+#include <glerror.h>
+#include "ShaderProgram.h"
 
 class Renderable : public Transform
 {
 public:
     Renderable(){}
 
-    bool load_mesh_to_map(OBJResult& obj, std::string name);
+    Renderable(OBJResult& obj);
 
-    bool init();
+    Renderable(OBJResult& obj, std::shared_ptr<Renderable> &parent);
 
-    bool init_trans_sphere(ShaderProgram& sp, std::shared_ptr<Mesh> mesh);
+    Renderable(OBJResult& obj, bool reverse);
+
+    Renderable(OBJResult& obj, glm::vec3 diffuse_colour,
+    glm::vec3 specular_reflection, GLfloat shininess);
+
+    Renderable(OBJResult& obj, std::vector<Material> &materials);
+
 
     /// render all meshes
     /// \return
     bool render(ShaderProgram & sp);
 
-    void setMat4(const std::string& name, const glm::mat4& mat, ShaderProgram & sp) const
-    {
-        glUniformMatrix4fv(glGetUniformLocation(sp.prog , name.c_str()), 1, GL_FALSE, &mat[0][0]);
-    }
+    bool render_shader(ShaderProgram & sp);
 
-    void move_meshes_x(GLfloat fl, std::string name, ShaderProgram& sp);
-    void move_meshes_y(GLfloat fl, std::string name, ShaderProgram& sp);
-
-    void scale_meshes(GLfloat fl, std::string name, ShaderProgram& sp);
-
-    void rotate_meshes(GLfloat fl, std::string name, ShaderProgram& sp);
+    bool render_with_texture(ShaderProgram & sp);
 
 
 
+    void set_materials_for_meshes() {
+
+        /*
+        std::cout << "material size: " << materials.size() << std::endl;
+
+        this->materials = materials;
+
+        size_t m_id = 0;
+        for (auto& mesh: meshes) {
+            mesh->set_Material(materials.at(m_id));
+
+            Material s;
+            mesh->get_Material(s);
+            std::cout << "control: " << s.shininess << std::endl;
 
 
-    bool renderS()
-    {
-        for (auto& smesh: this->sMeshes)
-        {
-            smesh.render();
+            m_id++;
         }
-        return true;
-    }
+         */
 
-    bool get_meshes(std::vector<Mesh>& meshes_to_get)
-    {
-        meshes_to_get = meshes;
-        return true;
-    }
-
-    bool add_mesh(Mesh mesh)
-    {
-        meshes.push_back(mesh);
-        return true;
-    }
-
-
-    bool add_smesh(sMesh mesh)
-    {
-        sMeshes.push_back(mesh);
-        return true;
-    }
-
-
-
-    bool initS()
-    {
-        for (auto& mesh: this->sMeshes)
+        size_t mat_counter = 0;
+        for (auto& mesh: meshes)
         {
-            mesh.initE();
+            mesh->material_ptr = material_ptrs.at(mat_counter);
+            mat_counter++;
         }
-        return true;
+
+
+    };
+
+
+    /// loads and initialises
+    /// \return
+    bool load_textures();
+
+
+
+    void setMat4(const std::string& name, const glm::mat4& mat, ShaderProgram& sp) const
+    {
+        GLint mat_loc = glGetUniformLocation(sp.prog, name.c_str());
+        glUniformMatrix4fv( mat_loc, 1, GL_FALSE, &mat[0][0]);
     }
 
+    void set_parent(std::shared_ptr<Renderable> &parent) {this->parent = parent;}
+    void get_parent(std::shared_ptr<Renderable> &parent) {parent = this->parent;}
+
+
+
+
+    void setVec3(const std::string& name, const glm::vec3& vec, ShaderProgram& sp) const
+    {
+        GLint vec_loc = glGetUniformLocation(sp.prog, name.c_str());
+
+        if (vec_loc == -1) {
+            std::cout << name << "ERROR  ------------------" << std::endl;
+
+            std::cout << name.c_str() << std::endl;
+        }
+
+        glUniform3fv(vec_loc, 1, glm::value_ptr(vec));
+    }
+
+    void setFloat(const std::string& name, const GLfloat floatv, ShaderProgram& sp) const
+    {
+        GLint vec_loc = glGetUniformLocation(sp.prog, name.c_str());
+
+        glUniform1f(vec_loc, floatv);
+    }
+
+    void setInt(const std::string& name, const GLint intv, ShaderProgram& sp) const
+    {
+        GLint vec_loc = glGetUniformLocation(sp.prog, name.c_str());
+
+        glUniform1i(vec_loc, intv);
+    }
+
+    std::string name = "";
+
+
+    GLuint t1;
+    GLuint t2;
+    GLuint t3;
+
+    int load_texture(GLuint &id, std::string path);
+
+    std::vector<Material> materials;
+
+    std::vector<std::shared_ptr<Material>> material_ptrs;
 
 private:
-    std::vector<Mesh> meshes;
-
-    std::unordered_multimap<std::string, std::shared_ptr<Mesh>> mesh_map;
-
-    std::vector<sMesh> sMeshes;
-    //std::vector<std::shared_ptr<Mesh>> memMeshes;
 
     //OBJResult objr;
     std::vector<OBJMesh> objlMeshes;
+    std::vector<std::shared_ptr<Mesh>> meshes;
+
+    std::shared_ptr<Renderable> parent;
+
+    //materials
+    //std::vector<Material> materials;
+
+
+
 
 
 };

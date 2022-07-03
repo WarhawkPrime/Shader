@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master/test/gtc
+# Install script for directory: D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glm-master/test/gtc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/objdump.exe")
 endif()
 

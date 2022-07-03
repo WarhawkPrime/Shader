@@ -24,6 +24,8 @@ void Mesh::init()
 
         //          GLenum target, GLsizeiptr size, const void *data, GLenum usage
         //now with vertexdata vector
+
+        //data for vector
         glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * vertexdata.size(), &vertexdata.front(), GL_STATIC_DRAW);
 
 
@@ -59,6 +61,8 @@ void Mesh::init()
         glGenBuffers(1, &iboID);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboID);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER,sizeof(Index) * indexdata.size() , &indexdata.front(), GL_STATIC_DRAW);
+
+        //unbind
     }
 }
 
@@ -75,6 +79,62 @@ void Mesh::render()
     //unbind VAO
     glBindVertexArray(0);
 }
+
+
+
+void Mesh::render(ShaderProgram &sp)
+{
+
+    //TODO: bind texture
+    // bind
+
+    //std::cout << "render mesh" << std::endl;
+
+    //get current TU
+        //GLuint oldTU = sp.getCurrentTU();
+
+    //get next free TU
+
+    //std::cout << "bind diffuse:" << std::endl;
+    //material.texture_diffuse.bind(sp, "material.diffuse", GL_TEXTURE0 );
+
+    //std::cout << "current TU: " << sp.getCurrentTU() << std::endl;
+
+    //std::cout << "bind emissive:" << std::endl;
+    //material.texture_emissive.bind(sp, "material.emissive", GL_TEXTURE0 );
+
+    //std::cout << "current TU: " << sp.getCurrentTU() << std::endl;
+
+    //std::cout << "bind specular:" << std::endl;
+    //material.texture_specular.bind(sp, "material.specular", GL_TEXTURE0 );
+
+    //std::cout << "current TU: " << sp.getCurrentTU() << std::endl;
+
+    //setFloat("material.shininess", material.shininess, sp);
+
+    //set TU to old value
+        //sp.resetTU(oldTU);
+
+
+    //bind of VAO
+    glBindVertexArray(vaoID);
+
+    //type, number of elements
+    glDrawElements(GL_TRIANGLES, indexdata.size(), GL_UNSIGNED_INT, 0);
+
+
+    //unbind VAO
+    glBindVertexArray(0);
+}
+
+
+
+
+
+
+
+
+
 
 
 

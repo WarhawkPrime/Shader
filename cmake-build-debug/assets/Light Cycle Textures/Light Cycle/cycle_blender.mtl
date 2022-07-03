@@ -1,0 +1,110 @@
+# Blender MTL File: 'None'
+# Material Count: 8
+
+newmtl MG_MovieCycle_Body_MI
+Ns 32.000008
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Body_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Body_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_MovieCycle_BodyHeadLight_EMSS.tga
+map_Ks Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Body_SPEC.tga
+
+newmtl MG_MovieCycle_Engine_MI
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Engine_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Engine_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Engine_EMSS.tga
+
+newmtl MG_MovieCycle_Glass_MI
+Ns 33.635901
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.840000 0.840000 0.840000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Light Cycle Textures\\Light Cycle\\Glass.tga
+map_d Light Cycle Textures\\Light Cycle\\Glass.tga
+
+newmtl MG_MovieCycle_PlayerBaton_MI
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Light Cycle Textures\\Light Cycle\\MG_Player_Baton_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_Player_Baton_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_Player_Baton_EMSS.tga
+map_Ks Light Cycle Textures\\Light Cycle\\MG_Player_Baton_SPEC.tga
+
+newmtl MG_MovieCycle_PlayerBody_MI
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Light Cycle Textures\\Light Cycle\\MG_Player_Body_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_Player_Body_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_Player_Body_EMSS.tga
+map_Ks Light Cycle Textures\\Light Cycle\\MG_Player_Body_SPEC.tga
+
+newmtl MG_MovieCycle_PlayerDisc_MI
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Light Cycle Textures\\Light Cycle\\MG_Player_Disc_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_Player_Disc_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_Player_Disc_EMSS.tga
+map_Ks Light Cycle Textures\\Light Cycle\\MG_Player_Disc_SPEC.tga
+
+newmtl MG_MovieCycle_PlayerHelmet_MI
+Ns 6.276667
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Light Cycle Textures\\Light Cycle\\MG_Player_Helmet_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_Player_Helmet_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_Player_Helmet_EMSS.tga
+map_Ks Light Cycle Textures\\Light Cycle\\MG_Player_Helmet_SPEC.tga
+
+newmtl MG_MovieCycle_Tire_MI
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Tire_NORM.tga
+map_Kd Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Tire_DIFF.tga
+map_Ke Light Cycle Textures\\Light Cycle\\MG_MovieCycle_Tire_EMSS.tga

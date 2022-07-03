@@ -30,3 +30,169 @@ An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Sh
 invalid operation
 An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
 invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 125:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 119:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 122:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 122:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 122:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 122:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 126:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 50:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 126:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 59:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 128:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 128:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\SceneElements\Texture2D.cpp", line: 128:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid operation
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid enum
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value
+An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
+invalid value

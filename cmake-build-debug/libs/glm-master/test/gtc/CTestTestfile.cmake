@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master/test/gtc
-# Build directory: C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/test/gtc
+# Source directory: D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glm-master/test/gtc
+# Build directory: D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/test/gtc
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

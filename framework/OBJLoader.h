@@ -220,6 +220,8 @@ private:
 public:
 	static OBJResult loadOBJ(const std::string& objpath, bool calcnormals = false, bool calctangents = false);
 
+    static void loadOBJ_alt(const std::string& objpath, bool calcnormals = false, bool calctangents = false);
+
 	class DataCache
 	{
 	public:

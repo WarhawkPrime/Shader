@@ -52,106 +52,152 @@ build cmake_object_order_depends_target_Shaderentwicklung: phony || cmake_object
 build CMakeFiles/Shaderentwicklung.dir/src/main.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/main.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\main.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Mesh.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements/Mesh.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements\Mesh.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Renderable.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements/Renderable.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements\Renderable.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
+
+build CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Camera.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements/Camera.cpp || cmake_object_order_depends_target_Shaderentwicklung
+  DEFINES = -DGLEW_STATIC
+  DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements\Camera.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
+  OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
+  OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
+
+build CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/PointLight.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements/PointLight.cpp || cmake_object_order_depends_target_Shaderentwicklung
+  DEFINES = -DGLEW_STATIC
+  DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements\PointLight.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
+  OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
+  OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/AssetManager.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/AssetManager.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\Assets\AssetManager.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\Assets
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/ShaderProgram.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets/ShaderProgram.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\Assets\ShaderProgram.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\Assets
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Framework/Rendering/Primitives.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering/Primitives.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\Rendering\Primitives.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\Rendering
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Transform.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements/Transform.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements\Transform.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Framework\SceneElements
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Game/Game.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game/Game.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Game\Game.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Game
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/src/Game/Scene.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game/Scene.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\src\Game\Scene.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\src\Game
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/framework/GameWindow.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework/GameWindow.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\framework\GameWindow.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\framework
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/framework/glerror.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework/glerror.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\framework\glerror.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\framework
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/framework/Input.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework/Input.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\framework\Input.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\framework
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 build CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader.cpp.obj: CXX_COMPILER__Shaderentwicklung_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework/OBJLoader.cpp || cmake_object_order_depends_target_Shaderentwicklung
   DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles\Shaderentwicklung.dir\framework\OBJLoader.cpp.obj.d
-  FLAGS = -g -std=gnu++11
+  FLAGS = -g -std=gnu++17
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Assets -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/Rendering -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Framework/SceneElements -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/src/Game -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/framework -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/include/GL -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   OBJECT_FILE_DIR = CMakeFiles\Shaderentwicklung.dir\framework
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
+  TARGET_PDB = Shaderentwicklung.pdb
 
 
 # =============================================================================
@@ -161,15 +207,16 @@ build CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable Shaderentwicklung.exe
 
-build Shaderentwicklung.exe: CXX_EXECUTABLE_LINKER__Shaderentwicklung_Debug CMakeFiles/Shaderentwicklung.dir/src/main.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Mesh.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Renderable.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/AssetManager.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/ShaderProgram.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/Rendering/Primitives.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Transform.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Game/Game.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Game/Scene.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/GameWindow.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/glerror.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/Input.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader.cpp.obj | libs/glfw-3.2.1/src/libglfw3.a lib/libglew32d.a libs/stb/libstb.a || lib/libglew32d.a libs/glfw-3.2.1/src/libglfw3.a libs/stb/libstb.a
+build Shaderentwicklung.exe: CXX_EXECUTABLE_LINKER__Shaderentwicklung_Debug CMakeFiles/Shaderentwicklung.dir/src/main.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Mesh.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Renderable.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Camera.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/PointLight.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/AssetManager.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/ShaderProgram.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/Rendering/Primitives.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Transform.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Game/Game.cpp.obj CMakeFiles/Shaderentwicklung.dir/src/Game/Scene.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/GameWindow.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/glerror.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/Input.cpp.obj CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader.cpp.obj | libs/glfw-3.2.1/src/libglfw3.a lib/libglew32d.a libs/stb/libstb.a || lib/libglew32d.a libs/glfw-3.2.1/src/libglfw3.a libs/stb/libstb.a
   FLAGS = -g
   LINK_LIBRARIES = libs/glfw-3.2.1/src/libglfw3.a  lib/libglew32d.a  -lopengl32  -lglu32  libs/stb/libstb.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Shaderentwicklung.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Shaderentwicklung.dir\
   TARGET_FILE = Shaderentwicklung.exe
   TARGET_IMPLIB = libShaderentwicklung.dll.a
-  TARGET_PDB = Shaderentwicklung.exe.dbg
+  TARGET_PDB = Shaderentwicklung.pdb
 
 
 #############################################
@@ -409,6 +456,8 @@ build libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.obj: CXX_COM
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master/glm/..
   OBJECT_DIR = libs\glm-master\glm\CMakeFiles\glm_dummy.dir
   OBJECT_FILE_DIR = libs\glm-master\glm\CMakeFiles\glm_dummy.dir\detail
+  TARGET_COMPILE_PDB = libs\glm-master\glm\CMakeFiles\glm_dummy.dir\
+  TARGET_PDB = libs\glm-master\glm\glm_dummy.pdb
 
 build libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.obj: CXX_COMPILER__glm_dummy_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master/glm/detail/glm.cpp || cmake_object_order_depends_target_glm_dummy
   DEP_FILE = libs\glm-master\glm\CMakeFiles\glm_dummy.dir\detail\glm.cpp.obj.d
@@ -416,6 +465,8 @@ build libs/glm-master/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.obj: CXX_COMPI
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master/glm/..
   OBJECT_DIR = libs\glm-master\glm\CMakeFiles\glm_dummy.dir
   OBJECT_FILE_DIR = libs\glm-master\glm\CMakeFiles\glm_dummy.dir\detail
+  TARGET_COMPILE_PDB = libs\glm-master\glm\CMakeFiles\glm_dummy.dir\
+  TARGET_PDB = libs\glm-master\glm\glm_dummy.pdb
 
 
 # =============================================================================
@@ -431,9 +482,10 @@ build libs/glm-master/glm/glm_dummy.exe: CXX_EXECUTABLE_LINKER__glm_dummy_Debug 
   OBJECT_DIR = libs\glm-master\glm\CMakeFiles\glm_dummy.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = libs\glm-master\glm\CMakeFiles\glm_dummy.dir\
   TARGET_FILE = libs\glm-master\glm\glm_dummy.exe
   TARGET_IMPLIB = libs\glm-master\glm\libglm_dummy.dll.a
-  TARGET_PDB = glm_dummy.exe.dbg
+  TARGET_PDB = libs\glm-master\glm\glm_dummy.pdb
 
 
 #############################################
@@ -1011,6 +1063,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_De
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1019,6 +1073,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_Debug
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1027,6 +1083,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_Debu
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1035,6 +1093,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_De
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1043,6 +1103,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_Deb
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1051,6 +1113,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_Deb
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1059,6 +1123,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1067,6 +1133,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1075,6 +1143,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__g
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1083,6 +1153,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_tls.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/win32_tls.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1091,6 +1163,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_tls.c.obj: C_COMPILER__glfw_
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1099,6 +1173,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__gl
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1107,6 +1183,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glf
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H
@@ -1115,6 +1193,8 @@ build libs/glfw-3.2.1/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glf
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/include -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glfw-3.2.1/src -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/src
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 
 # =============================================================================
@@ -1129,8 +1209,9 @@ build libs/glfw-3.2.1/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug libs/g
   OBJECT_DIR = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = libs\glfw-3.2.1\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_FILE = libs\glfw-3.2.1\src\libglfw3.a
-  TARGET_PDB = glfw3.a.dbg
+  TARGET_PDB = libs\glfw-3.2.1\src\libglfw3.pdb
 
 
 #############################################
@@ -1218,6 +1299,8 @@ build libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/__/src/glew.c.obj: C_CO
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include
   OBJECT_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir
   OBJECT_FILE_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\__\__\src
+  TARGET_COMPILE_PDB = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\
+  TARGET_PDB = bin\glew32d.pdb
 
 build libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/glew.rc.obj: RC_COMPILER__glew_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/glew.rc || cmake_object_order_depends_target_glew
   DEFINES = -DGLEW_BUILD -DGLEW_NO_GLU -Dglew_EXPORTS
@@ -1225,6 +1308,8 @@ build libs/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/__/glew.rc.obj: RC_COMPILE
   INCLUDES = -I C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include
   OBJECT_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir
   OBJECT_FILE_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\__
+  TARGET_COMPILE_PDB = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\
+  TARGET_PDB = bin\glew32d.pdb
 
 
 # =============================================================================
@@ -1241,9 +1326,10 @@ build bin/glew32d.dll lib/libglew32d.dll.a: C_SHARED_LIBRARY_LINKER__glew_Debug 
   POST_BUILD = cd .
   PRE_LINK = cd .
   RESTAT = 1
+  TARGET_COMPILE_PDB = libs\glew-2.1.0\build\cmake\CMakeFiles\glew.dir\
   TARGET_FILE = bin\glew32d.dll
   TARGET_IMPLIB = lib\libglew32d.dll.a
-  TARGET_PDB = glew32d.dll.dbg
+  TARGET_PDB = bin\glew32d.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target glew_s
@@ -1261,6 +1347,8 @@ build libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/__/src/glew.c.obj: C_
   INCLUDES = -IC:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include
   OBJECT_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir
   OBJECT_FILE_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\__\__\src
+  TARGET_COMPILE_PDB = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\glew_s.pdb
+  TARGET_PDB = lib\libglew32d.pdb
 
 build libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/glew.rc.obj: RC_COMPILER__glew_s_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/glew.rc || cmake_object_order_depends_target_glew_s
   DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
@@ -1268,6 +1356,8 @@ build libs/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/__/glew.rc.obj: RC_COMPI
   INCLUDES = -I C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include
   OBJECT_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir
   OBJECT_FILE_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\__
+  TARGET_COMPILE_PDB = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\glew_s.pdb
+  TARGET_PDB = lib\libglew32d.pdb
 
 
 # =============================================================================
@@ -1282,8 +1372,9 @@ build lib/libglew32d.a: C_STATIC_LIBRARY_LINKER__glew_s_Debug libs/glew-2.1.0/bu
   OBJECT_DIR = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = libs\glew-2.1.0\build\cmake\CMakeFiles\glew_s.dir\glew_s.pdb
   TARGET_FILE = lib\libglew32d.a
-  TARGET_PDB = glew32d.a.dbg
+  TARGET_PDB = lib\libglew32d.pdb
 
 
 #############################################
@@ -1369,12 +1460,16 @@ build libs/stb/CMakeFiles/stb.dir/stb_image.c.obj: C_COMPILER__stb_Debug C$:/Use
   FLAGS = -g
   OBJECT_DIR = libs\stb\CMakeFiles\stb.dir
   OBJECT_FILE_DIR = libs\stb\CMakeFiles\stb.dir
+  TARGET_COMPILE_PDB = libs\stb\CMakeFiles\stb.dir\stb.pdb
+  TARGET_PDB = libs\stb\libstb.pdb
 
 build libs/stb/CMakeFiles/stb.dir/stb_image_write.c.obj: C_COMPILER__stb_Debug C$:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/stb/stb_image_write.c || cmake_object_order_depends_target_stb
   DEP_FILE = libs\stb\CMakeFiles\stb.dir\stb_image_write.c.obj.d
   FLAGS = -g
   OBJECT_DIR = libs\stb\CMakeFiles\stb.dir
   OBJECT_FILE_DIR = libs\stb\CMakeFiles\stb.dir
+  TARGET_COMPILE_PDB = libs\stb\CMakeFiles\stb.dir\stb.pdb
+  TARGET_PDB = libs\stb\libstb.pdb
 
 
 # =============================================================================
@@ -1389,8 +1484,9 @@ build libs/stb/libstb.a: C_STATIC_LIBRARY_LINKER__stb_Debug libs/stb/CMakeFiles/
   OBJECT_DIR = libs\stb\CMakeFiles\stb.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = libs\stb\CMakeFiles\stb.dir\stb.pdb
   TARGET_FILE = libs\stb\libstb.a
-  TARGET_PDB = stb.a.dbg
+  TARGET_PDB = libs\stb\libstb.pdb
 
 
 #############################################
@@ -1597,14 +1693,14 @@ build libs/stb/all: phony libs/stb/libstb.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../libs/CMakeLists.txt ../libs/glew-2.1.0/build/cmake/CMakeLists.txt ../libs/glew-2.1.0/glew.pc.in ../libs/glfw-3.2.1/CMakeLists.txt ../libs/glfw-3.2.1/CMake/modules/FindVulkan.cmake ../libs/glfw-3.2.1/src/CMakeLists.txt ../libs/glfw-3.2.1/src/glfw3.pc.in ../libs/glfw-3.2.1/src/glfw3Config.cmake.in ../libs/glfw-3.2.1/src/glfw_config.h.in ../libs/glm-master/CMakeLists.txt ../libs/glm-master/cmake/glm.pc.in ../libs/glm-master/cmake/glmBuildConfig.cmake.in ../libs/glm-master/cmake/glmConfig.cmake.in ../libs/glm-master/cmake_uninstall.cmake.in ../libs/glm-master/glm/CMakeLists.txt ../libs/glm-master/test/CMakeLists.txt ../libs/glm-master/test/bug/CMakeLists.txt ../libs/glm-master/test/core/CMakeLists.txt ../libs/glm-master/test/ext/CMakeLists.txt ../libs/glm-master/test/gtc/CMakeLists.txt ../libs/glm-master/test/gtx/CMakeLists.txt ../libs/stb/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../libs/CMakeLists.txt ../libs/glew-2.1.0/build/cmake/CMakeLists.txt ../libs/glew-2.1.0/glew.pc.in ../libs/glfw-3.2.1/CMakeLists.txt ../libs/glfw-3.2.1/CMake/modules/FindVulkan.cmake ../libs/glfw-3.2.1/src/CMakeLists.txt ../libs/glfw-3.2.1/src/glfw3.pc.in ../libs/glfw-3.2.1/src/glfw3Config.cmake.in ../libs/glfw-3.2.1/src/glfw_config.h.in ../libs/glm-master/CMakeLists.txt ../libs/glm-master/cmake/glm.pc.in ../libs/glm-master/cmake/glmBuildConfig.cmake.in ../libs/glm-master/cmake/glmConfig.cmake.in ../libs/glm-master/cmake_uninstall.cmake.in ../libs/glm-master/glm/CMakeLists.txt ../libs/glm-master/test/CMakeLists.txt ../libs/glm-master/test/bug/CMakeLists.txt ../libs/glm-master/test/core/CMakeLists.txt ../libs/glm-master/test/ext/CMakeLists.txt ../libs/glm-master/test/gtc/CMakeLists.txt ../libs/glm-master/test/gtx/CMakeLists.txt ../libs/stb/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckIncludeFile.c.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../libs/CMakeLists.txt ../libs/glew-2.1.0/build/cmake/CMakeLists.txt ../libs/glew-2.1.0/glew.pc.in ../libs/glfw-3.2.1/CMakeLists.txt ../libs/glfw-3.2.1/CMake/modules/FindVulkan.cmake ../libs/glfw-3.2.1/src/CMakeLists.txt ../libs/glfw-3.2.1/src/glfw3.pc.in ../libs/glfw-3.2.1/src/glfw3Config.cmake.in ../libs/glfw-3.2.1/src/glfw_config.h.in ../libs/glm-master/CMakeLists.txt ../libs/glm-master/cmake/glm.pc.in ../libs/glm-master/cmake/glmBuildConfig.cmake.in ../libs/glm-master/cmake/glmConfig.cmake.in ../libs/glm-master/cmake_uninstall.cmake.in ../libs/glm-master/glm/CMakeLists.txt ../libs/glm-master/test/CMakeLists.txt ../libs/glm-master/test/bug/CMakeLists.txt ../libs/glm-master/test/core/CMakeLists.txt ../libs/glm-master/test/ext/CMakeLists.txt ../libs/glm-master/test/gtc/CMakeLists.txt ../libs/glm-master/test/gtx/CMakeLists.txt ../libs/stb/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../libs/CMakeLists.txt ../libs/glew-2.1.0/build/cmake/CMakeLists.txt ../libs/glew-2.1.0/glew.pc.in ../libs/glfw-3.2.1/CMakeLists.txt ../libs/glfw-3.2.1/CMake/modules/FindVulkan.cmake ../libs/glfw-3.2.1/src/CMakeLists.txt ../libs/glfw-3.2.1/src/glfw3.pc.in ../libs/glfw-3.2.1/src/glfw3Config.cmake.in ../libs/glfw-3.2.1/src/glfw_config.h.in ../libs/glm-master/CMakeLists.txt ../libs/glm-master/cmake/glm.pc.in ../libs/glm-master/cmake/glmBuildConfig.cmake.in ../libs/glm-master/cmake/glmConfig.cmake.in ../libs/glm-master/cmake_uninstall.cmake.in ../libs/glm-master/glm/CMakeLists.txt ../libs/glm-master/test/CMakeLists.txt ../libs/glm-master/test/bug/CMakeLists.txt ../libs/glm-master/test/core/CMakeLists.txt ../libs/glm-master/test/ext/CMakeLists.txt ../libs/glm-master/test/gtc/CMakeLists.txt ../libs/glm-master/test/gtx/CMakeLists.txt ../libs/stb/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckIncludeFile.c.in C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.1/bin/cmake/win/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

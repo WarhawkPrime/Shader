@@ -23,7 +23,11 @@ OBJResult OBJLoader::loadOBJ(const std::string & objpath, bool calcnormals, bool
 		std::string command = "";
 		DataCache cache;
 		while (istreamhelper::peekString(stream, command))
-		{			
+		{
+            if (command == "usemtl")
+                std::cout << "command: " << command << std::endl;
+
+
 			if (command == "o")
 			{
 				result.objects.push_back(parseObject(cache, stream, calcnormals, calctangents));
@@ -33,10 +37,11 @@ OBJResult OBJLoader::loadOBJ(const std::string & objpath, bool calcnormals, bool
 				result.objects.push_back(parseObject(cache, stream, calcnormals, calctangents));
 			}
 			else
-			{				
+			{
 				stream.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 			}
 		}
+        stream.close();
 		result.objname = objpath;
 		return result;
 	}
@@ -45,6 +50,9 @@ OBJResult OBJLoader::loadOBJ(const std::string & objpath, bool calcnormals, bool
 		std::cerr << "Error: Loading OBJ failed: " << ex.what() << "\n";
 		throw ex;
 	}
+
+
+
 }
 
 OBJObject OBJLoader::parseObject(DataCache& cache, std::ifstream & stream, bool calcnormals, bool calctangents)
@@ -70,8 +78,15 @@ OBJObject OBJLoader::parseObject(DataCache& cache, std::ifstream & stream, bool 
 			object.name = "UNNAMED";
 		}
 
+        std::cout << "object name: " << object.name << std::endl;
+
+
+
 		while (istreamhelper::peekString(stream, command))
 		{
+            if (command == "usemtl")
+                std::cout << "command after parseobject: " << command << std::endl;
+
 			//Fill cache
 			if (command == "v")			//position
 			{
@@ -87,19 +102,30 @@ OBJObject OBJLoader::parseObject(DataCache& cache, std::ifstream & stream, bool 
 			}
 
 			//meshes, groups and faces
-			else if (command == "g" || command == "f") //grouped or ungrouped mesh
+			    //else if (command == "g" || command == "f") //grouped or ungrouped mesh
+            else if (command == "g" || command == "f" || command == "usemtl") //grouped or ungrouped mesh
 			{
+                std::cout << "g or f or usemtl" << std::endl;
+
+                if (command == "usemtl")
+                    std::cout << "usemtl command" << std::endl;
+
+                std::cout << "command: " << command << std::endl;
+
 				object.meshes.push_back(parseMesh(cache, stream, calcnormals, calctangents));
 			}
+
 			//stop condition
 			else if (command == "o") //next object found
 			{
+                std::cout << "stop condition" << std::endl;
 				return object;
 			}
 
 			//ignore everything else
 			else
 			{
+                std::cout << "ignore" << std::endl;
 				stream.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 			}
 		} //eof reached. model should be complete
@@ -174,6 +200,9 @@ glm::vec2 OBJLoader::parseUV(std::ifstream & stream)
 
 OBJMesh OBJLoader::parseMesh(DataCache & cache, std::ifstream & stream, bool calcnormals, bool calctangents)
 {
+    std::cout << "parse mesh" << std::endl;
+
+
 	try
 	{
 		OBJMesh mesh;

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake
+# Install script for directory: D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,22 +34,22 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/lib/libglew32d.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/lib/libglew32d.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../glew.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake/../../glew.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/GL" TYPE FILE FILES
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include/GL/wglew.h"
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include/GL/glew.h"
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/../../include/GL/glxew.h"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake/../../include/GL/wglew.h"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake/../../include/GL/glew.h"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake/../../include/GL/glxew.h"
     )
 endif()
 
@@ -57,7 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glew/glew-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glew/glew-targets.cmake"
-         "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake")
+         "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glew/glew-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -66,16 +66,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/CMakeFiles/Export/lib/cmake/glew/glew-targets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glew" TYPE FILE FILES
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/glew-config.cmake"
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glew-2.1.0/build/cmake/CopyImportedTargetProperties.cmake"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake/glew-config.cmake"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glew-2.1.0/build/cmake/CopyImportedTargetProperties.cmake"
     )
 endif()
 

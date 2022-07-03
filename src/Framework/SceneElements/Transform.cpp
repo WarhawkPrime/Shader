@@ -13,7 +13,7 @@ void Transform::updateTransformMatrix()
 
 Transform::Transform() :
 	m_position(0.0f),
-	m_rotation(),
+    m_rotation(glm::vec3(0,0,0)),
 	m_scale(1.0f),
 	m_transformMatrix(),
 	m_xaxis(1.0f, 0.0f, 0.0f),
@@ -68,7 +68,8 @@ void Transform::setPosition(const glm::vec3 & position)
 
 void Transform::setRotation(const glm::quat & rotation)
 {
-	m_rotation = rotation;
+	//m_rotation = rotation;
+    m_rotation = glm::normalize( rotation);
 	m_matrixDirty = true;
 }
 

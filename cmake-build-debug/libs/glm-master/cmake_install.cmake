@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master
+# Install script for directory: D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glm-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,17 +34,17 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master/glm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glm-master/glm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glm" TYPE FILE FILES
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/lib/cmake/glm/glmConfig.cmake"
-    "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/glmConfigVersion.cmake"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/lib/cmake/glm/glmConfig.cmake"
+    "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/glmConfigVersion.cmake"
     )
 endif()
 
@@ -52,7 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glm/glmTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glm/glmTargets.cmake"
-         "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
+         "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glm/glmTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -61,17 +61,17 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glm" TYPE FILE FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glm" TYPE FILE FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/CMakeFiles/Export/lib/cmake/glm/glmTargets.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/glm.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/glm.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/glm/cmake_install.cmake")
-  include("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/test/cmake_install.cmake")
+  include("D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/glm/cmake_install.cmake")
+  include("D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/test/cmake_install.cmake")
 
 endif()
 

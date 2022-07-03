@@ -49,7 +49,7 @@ unset(_expectedTargets)
 add_library(glm INTERFACE IMPORTED)
 
 set_target_properties(glm PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs/glm-master"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs/glm-master"
 )
 
 # This file does not depend on other imported targets which have

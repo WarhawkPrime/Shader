@@ -1,18 +1,44 @@
 #version 330 core
 
-layout (location = 0) in vec3 pos;
-layout (location = 1) in vec3 colorRGB;
+layout (location = 0) in vec3 pos;  //v geometric vertices
+layout (location = 1) in vec2 vt;   //texture vertices
+layout (location = 2) in vec3 aNormal;  //vn vertex normals
+layout (location = 3) in vec3 f;       //face
 
-uniform float delta_colour = 1.0;
 
-out vec3 colorVS;
+uniform mat4 model_m;
+uniform mat4 view_m;
+uniform mat4 projection_m;
+
+uniform vec3 camPos;
+uniform vec3 lightpos_v;
+
+
+//changing colours
+//out vec3 colorVS;
+
+
+//lightpoint vectors
+//out vec3 toCamera;
+
+out vec3 lightDir;
+out vec3 viewDir;
+out vec3 FragPos;
+out vec3 Normal;
+
+out vec2 TexCoords;
 
 void main(){
-    delta_colour = 0.1;
-    colorVS = colorRGB;
-    colorVS.x = colorVS.x + 0.1;
-    colorVS.y = colorVS.y + 0.1;
-    colorVS.z = colorVS.z + 0.1;
 
-    gl_Position = vec4(pos.x, pos.y, pos.z, 1.0);
+    FragPos = vec3(model_m * vec4(pos, 1.0));
+    Normal = mat3(transpose(inverse(model_m))) * aNormal;
+
+    gl_Position =  projection_m * view_m * model_m * vec4(pos, 1.0);
+
+
+    lightDir = normalize(lightpos_v - FragPos);
+    viewDir = normalize(camPos - FragPos);
+
+    TexCoords = vt;
+
 }

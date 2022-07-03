@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/libs
+# Install script for directory: D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,15 +34,15 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glm-master/cmake_install.cmake")
-  include("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glfw-3.2.1/cmake_install.cmake")
-  include("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_install.cmake")
-  include("C:/Users/denni/Documents/Uni/Master_SS_2022/Shader/Praktikum/Framework/cmake-build-debug/libs/stb/cmake_install.cmake")
+  include("D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glm-master/cmake_install.cmake")
+  include("D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glfw-3.2.1/cmake_install.cmake")
+  include("D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/glew-2.1.0/build/cmake/cmake_install.cmake")
+  include("D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/cmake-build-debug/libs/stb/cmake_install.cmake")
 
 endif()
 

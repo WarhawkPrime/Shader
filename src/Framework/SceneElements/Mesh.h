@@ -9,6 +9,8 @@
 #include <vector>
 #include "CommonTypes.h"
 
+#include "Material.h"
+
 #include <iostream>
 
 class Mesh
@@ -18,9 +20,59 @@ public:
     Mesh(std::vector<Vertex> vertexdata, std::vector<Index> indexdata, std::vector<VertexAttribute> attributes )
         : vertexdata(vertexdata), indexdata(indexdata), attributes(attributes) {std::cout << "mesh const" << std::endl;}
 
+
+    Mesh(std::vector<Vertex> vertexdata, std::vector<Index> indexdata, std::vector<VertexAttribute> attributes,
+         glm::vec3 diffuse_colour, glm::vec3 specular_reflection, GLfloat shininess
+         )
+            : vertexdata(vertexdata), indexdata(indexdata), attributes(attributes),
+              diffuse_colour(diffuse_colour),
+              specular_reflection(specular_reflection),
+              shininess(shininess) {}
+
+
+    void setFloat(const std::string& name, const GLfloat floatv, ShaderProgram& sp) const
+    {
+        GLint vec_loc = glGetUniformLocation(sp.prog, name.c_str());
+
+        glUniform1f(vec_loc, floatv);
+    }
+
+    void setInt(const std::string& name, const GLint intv, ShaderProgram& sp) const
+    {
+        GLint vec_loc = glGetUniformLocation(sp.prog, name.c_str());
+
+        glUniform1i(vec_loc, intv);
+    }
+
     void render();
 
+    void render(ShaderProgram &sp);
+
     void init();
+
+
+
+
+
+    void set_parent(std::shared_ptr<Mesh> &parent) {this->parent = parent;}
+    void get_parent(std::shared_ptr<Mesh> &parent) {parent = this->parent;}
+
+    void set_Material(Material &mat) {this->material = mat;}
+    void get_Material(Material &mat) {mat = this->material;}
+
+
+    /*
+    GLfloat move_x = 0;
+    GLfloat move_y = 0;
+    GLfloat scale = 0;
+    GLfloat rotate = 0;
+    */
+
+    // shader
+    glm::vec3 diffuse_colour = glm::vec3(0.8, 0.8, 0.8);
+    glm::vec3 specular_reflection = glm::vec3 (0.5, 0.5, 0.5);
+    GLfloat shininess = 32;
+
 
 
     bool add_vertex_data(Vertex& v)
@@ -42,22 +94,20 @@ public:
         create_example_attributes();
         return true;
     }
+
     bool create_example_vertex_data();
     bool create_example_index_data();
     bool create_example_attributes();
 
-    void set_parent(std::shared_ptr<Mesh> &parent) {this->parent = parent;}
-    void get_parent(std::shared_ptr<Mesh> &parent) {parent = this->parent;}
 
-
-
-
-    GLfloat move_x = 0;
-    GLfloat move_y = 0;
-    GLfloat scale = 0;
-    GLfloat rotate = 0;
+    std::shared_ptr<Material> material_ptr;
 
 private:
+
+    Material material;
+
+
+
     std::vector<Vertex> vertexdata;
     std::vector<Index> indexdata;
     std::vector<VertexAttribute> attributes;
@@ -66,7 +116,15 @@ private:
 
     std::shared_ptr<Mesh> parent;
 
+
+
+
 };
+
+
+
+
+
 
 
 
@@ -113,8 +171,6 @@ private:
     std::vector<VertexAttribute> attributes;
 
     GLuint vaoID, vboID, iboID;
-
-
 
 };
 

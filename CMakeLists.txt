@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(Shaderentwicklung)
 
-set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp" src/Framework/SceneElements/Mesh.h src/Framework/SceneElements/Mesh.cpp src/Framework/SceneElements/Renderable.h src/Framework/SceneElements/Renderable.cpp)
+set(SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp" src/Framework/SceneElements/Mesh.h src/Framework/SceneElements/Mesh.cpp src/Framework/SceneElements/Renderable.h src/Framework/SceneElements/Renderable.cpp src/Framework/SceneElements/Camera.cpp src/Framework/SceneElements/Camera.h src/Framework/SceneElements/PointLight.cpp src/Framework/SceneElements/PointLight.h src/Framework/SceneElements/SpotLight.cpp src/Framework/SceneElements/SpotLight.h src/Framework/SceneElements/Texture2D.cpp src/Framework/SceneElements/Texture2D.h src/Framework/SceneElements/Material.cpp src/Framework/SceneElements/Material.h framework/OBJLoader_alt.cpp)
 set(INCLUDES "${CMAKE_CURRENT_SOURCE_DIR}/src")
 
 ##-------------------------------add your source files here-------------------------------------------------------------
@@ -51,7 +51,7 @@ list(APPEND INCLUDES "${CMAKE_CURRENT_SOURCE_DIR}/framework")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/libs")
 
 ##--------------------------------executable target---------------------------------------------------------------------
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Shaderentwicklung ${SOURCES})
 target_include_directories(
