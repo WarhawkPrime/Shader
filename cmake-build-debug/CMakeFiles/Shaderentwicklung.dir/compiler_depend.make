@@ -1146,7 +1146,34 @@ CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader.cpp.obj: ../framework/OBJLo
   ../libs/glm-master/glm/gtc/vec1.hpp \
   ../libs/glm-master/glm/gtc/vec1.inl \
   ../libs/glm-master/glm/gtc/type_ptr.inl \
-  ../libs/stb/stb_image.h
+  ../libs/stb/stb_image.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bit \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocated_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/concurrence.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
+  ../src/Framework/SceneElements/Material.h \
+  ../src/Framework/SceneElements/Texture2D.h \
+  ../framework/glerror.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
+  ../framework/fw_config.h \
+  ../src/Framework/Assets/ShaderProgram.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h
 
 CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader_alt.cpp.obj: ../framework/OBJLoader_alt.cpp \
   ../framework/OBJLoader.h \
@@ -1537,7 +1564,34 @@ CMakeFiles/Shaderentwicklung.dir/framework/OBJLoader_alt.cpp.obj: ../framework/O
   ../libs/glm-master/glm/gtc/vec1.hpp \
   ../libs/glm-master/glm/gtc/vec1.inl \
   ../libs/glm-master/glm/gtc/type_ptr.inl \
-  ../libs/stb/stb_image.h
+  ../libs/stb/stb_image.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bit \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocated_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/concurrence.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
+  ../src/Framework/SceneElements/Material.h \
+  ../src/Framework/SceneElements/Texture2D.h \
+  ../framework/glerror.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
+  ../framework/fw_config.h \
+  ../src/Framework/Assets/ShaderProgram.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h
 
 CMakeFiles/Shaderentwicklung.dir/framework/glerror.cpp.obj: ../framework/glerror.cpp \
   ../framework/glerror.h \
@@ -2326,7 +2380,12 @@ CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/AssetManager.cpp.obj: ../s
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
-  ../framework/CommonTypes.h
+  ../framework/CommonTypes.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  ../src/Framework/SceneElements/Material.h \
+  ../src/Framework/SceneElements/Texture2D.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h
 
 CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/ShaderProgram.cpp.obj: ../src/Framework/Assets/ShaderProgram.cpp \
   ../src/Framework/Assets/ShaderProgram.h \
@@ -3497,7 +3556,10 @@ CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Camera.cpp.obj: ../
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h
 
 CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Material.cpp.obj: ../src/Framework/SceneElements/Material.cpp \
   ../src/Framework/SceneElements/Material.h \
@@ -4703,7 +4765,10 @@ CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/PointLight.cpp.obj:
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h
 
 CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Renderable.cpp.obj: ../src/Framework/SceneElements/Renderable.cpp \
   ../src/Framework/SceneElements/Renderable.h \
@@ -5121,6 +5186,9 @@ CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Renderable.cpp.obj:
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h \
   ../src/Framework/SceneElements/Transform.h
 
 CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/SpotLight.cpp.obj: ../src/Framework/SceneElements/SpotLight.cpp \
@@ -5541,7 +5609,10 @@ CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/SpotLight.cpp.obj: 
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
+  ../src/Framework/SceneElements/Mesh.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h
 
 CMakeFiles/Shaderentwicklung.dir/src/Framework/SceneElements/Texture2D.cpp.obj: ../src/Framework/SceneElements/Texture2D.cpp \
   ../src/Framework/SceneElements/Texture2D.h \
@@ -6627,10 +6698,13 @@ CMakeFiles/Shaderentwicklung.dir/src/Game/Game.cpp.obj: ../src/Game/Game.cpp \
   ../src/Framework/Assets/AssetManager.h \
   ../framework/OBJLoader.h \
   ../framework/CommonTypes.h \
-  ../src/Framework/SceneElements/Renderable.h \
   ../src/Framework/SceneElements/Mesh.h \
   ../src/Framework/SceneElements/Material.h \
   ../src/Framework/SceneElements/Texture2D.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h \
+  ../src/Framework/SceneElements/Renderable.h \
+  ../src/Framework/SceneElements/Mesh.h \
   ../src/Framework/SceneElements/Transform.h \
   ../src/Framework/SceneElements/Camera.h \
   ../src/Framework/SceneElements/Renderable.h \
@@ -7062,17 +7136,19 @@ CMakeFiles/Shaderentwicklung.dir/src/Game/Scene.cpp.obj: ../src/Game/Scene.cpp \
   ../src/Framework/Assets/AssetManager.h \
   ../framework/OBJLoader.h \
   ../framework/CommonTypes.h \
-  ../src/Framework/SceneElements/Renderable.h \
   ../src/Framework/SceneElements/Mesh.h \
   ../src/Framework/SceneElements/Material.h \
   ../src/Framework/SceneElements/Texture2D.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h \
+  ../src/Framework/SceneElements/Renderable.h \
+  ../src/Framework/SceneElements/Mesh.h \
   ../src/Framework/SceneElements/Transform.h \
   ../src/Framework/SceneElements/Camera.h \
   ../src/Framework/SceneElements/Renderable.h \
   ../src/Framework/SceneElements/PointLight.h \
   ../src/Framework/SceneElements/SpotLight.h \
-  ../src/Framework/SceneElements/PointLight.h \
-  ../src/Framework/SceneElements/Mesh.h
+  ../src/Framework/SceneElements/PointLight.h
 
 CMakeFiles/Shaderentwicklung.dir/src/main.cpp.obj: ../src/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
@@ -7499,10 +7575,13 @@ CMakeFiles/Shaderentwicklung.dir/src/main.cpp.obj: ../src/main.cpp \
   ../src/Framework/Assets/AssetManager.h \
   ../framework/OBJLoader.h \
   ../framework/CommonTypes.h \
-  ../src/Framework/SceneElements/Renderable.h \
   ../src/Framework/SceneElements/Mesh.h \
   ../src/Framework/SceneElements/Material.h \
   ../src/Framework/SceneElements/Texture2D.h \
+  ../framework/OBJ_Loader_Ext.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h \
+  ../src/Framework/SceneElements/Renderable.h \
+  ../src/Framework/SceneElements/Mesh.h \
   ../src/Framework/SceneElements/Transform.h \
   ../src/Framework/SceneElements/Camera.h \
   ../src/Framework/SceneElements/Renderable.h \
@@ -8125,6 +8204,8 @@ C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 ../libs/glm-master/glm/detail/type_mat4x4.hpp:
 
+../framework/OBJ_Loader_Ext.h:
+
 ../libs/glm-master/glm/detail/type_mat4x4.inl:
 
 ../libs/glm-master/glm/detail/type_mat4x4_simd.inl:
@@ -8146,6 +8227,8 @@ C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept:
 
 ../libs/glm-master/glm/vector_relational.hpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2022.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h:
 
 ../libs/glm-master/glm/detail/func_vector_relational.inl:
 

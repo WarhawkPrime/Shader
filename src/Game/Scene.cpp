@@ -50,10 +50,18 @@ bool Scene::init()
 
 
         //========== Cycle ==========
+        std::vector<Mesh> mesh_vec;
+        OBJLoader::loadOBJ_alt(mesh_vec, "assets/Light Cycle Textures/Light Cycle/cycle_blender.obj" , false, false);
 
-        OBJLoader::loadOBJ_alt("assets/Light Cycle Textures/Light Cycle/cycle_blender.obj" , false, false);
+
+        std::cout << "size of generated meshes:::::::::::: " << mesh_vec.size() << std::endl;
+
+
+        //OBJLoader::loadOBJ_alt("assets/Light Cycle Textures/Light Cycle/cycle_blender.obj" , false, false);
 
         //OBJResult obj_c = OBJLoader::loadOBJ("assets/Light Cycle Textures/Light Cycle/HQ_Movie cycle.obj" , false, false);
+
+        /*
         OBJResult obj_c = OBJLoader::loadOBJ("assets/Light Cycle Textures/Light Cycle/cycle_blender.obj" , false, false);
         std::shared_ptr<Renderable> cycle = std::make_shared<Renderable>(obj_c, glm::vec3(1.0, 1.0, 1.0),
                 glm::vec3(1.0, 1.0, 1.0), 32.0);
@@ -63,13 +71,9 @@ bool Scene::init()
         //cycle->translate(glm::vec3(0.0, 0.2, 0.0));
         cycle->setPosition(glm::vec3(0.0, 0.0, 0.0));
         cycle->rotate(glm::quat(glm::vec3(glm::degrees(0.85),glm::degrees(90.0),0)));
-
-
+        */
 
         //---------- Materials ----------
-
-
-
 
         /*
         shr_ground_material->load_texture(ground->t1 ,"assets/textures/ground/ground_diff.png");
@@ -77,48 +81,77 @@ bool Scene::init()
         shr_ground_material->load_texture(ground->t3 ,"assets/textures/ground/ground_spec.png");
         */
 
+
+        std::vector<std::shared_ptr<Material>> cycle_materials;
+
         //0
         std::shared_ptr<Material> shr_cycle_body_material = std::make_shared<Material>(32, 1);
         shr_cycle_body_material->load_texture(shr_cycle_body_material->diffuse_id ,"assets/textures/cycle/MG_MovieCycle_Body_DIFF.tga");
         shr_cycle_body_material->load_texture(shr_cycle_body_material->emissive_id ,"assets/textures/cycle/MG_MovieCycle_Body_EMSS.tga");
         shr_cycle_body_material->load_texture(shr_cycle_body_material->spec_id ,"assets/textures/cycle/MG_MovieCycle_Body_SPEC.tga");
-        cycle->material_ptrs.push_back(shr_cycle_body_material);
+
+        cycle_materials.push_back(shr_cycle_body_material);
+
+        //cycle->material_ptrs.push_back(shr_cycle_body_material);
 
         //1
         std::shared_ptr<Material> shr_cycle_general_material = std::make_shared<Material>(32, 1);
         shr_cycle_general_material->load_texture(shr_cycle_general_material->diffuse_id ,"assets/textures/black.png");
         shr_cycle_general_material->load_texture(shr_cycle_general_material->emissive_id ,"assets/textures/black.png");
         shr_cycle_general_material->load_texture(shr_cycle_general_material->spec_id ,"assets/textures/black.png");
-        cycle->material_ptrs.push_back(shr_cycle_general_material);
+
+        cycle_materials.push_back(shr_cycle_general_material);
+        //cycle->material_ptrs.push_back(shr_cycle_general_material);
 
         //2
         std::shared_ptr<Material> shr_cycle_tire_material = std::make_shared<Material>(32, 1);
         shr_cycle_tire_material->load_texture(shr_cycle_tire_material->diffuse_id ,"assets/textures/cycle/MG_MovieCycle_Tire_DIFF.tga");
         shr_cycle_tire_material->load_texture(shr_cycle_tire_material->emissive_id ,"assets/textures/cycle/MG_MovieCycle_Tire_EMSS.tga");
         shr_cycle_tire_material->load_texture(shr_cycle_tire_material->spec_id ,"assets/textures/black.png");
-        cycle->material_ptrs.push_back(shr_cycle_tire_material);
+
+        cycle_materials.push_back(shr_cycle_tire_material);
+        //cycle->material_ptrs.push_back(shr_cycle_tire_material);
 
         //3
         std::shared_ptr<Material> shr_cycle_general_material_1 = shr_cycle_general_material;
-        cycle->material_ptrs.push_back(shr_cycle_general_material_1);
+        cycle_materials.push_back(shr_cycle_general_material_1);
+        //cycle->material_ptrs.push_back(shr_cycle_general_material_1);
 
         //4
         std::shared_ptr<Material> shr_cycle_general_material_2 = shr_cycle_general_material;
-        cycle->material_ptrs.push_back(shr_cycle_general_material_2);
+        cycle_materials.push_back(shr_cycle_general_material_2);
+        //cycle->material_ptrs.push_back(shr_cycle_general_material_2);
 
         //5
         std::shared_ptr<Material> shr_cycle_general_material_3 = shr_cycle_general_material;
-        cycle->material_ptrs.push_back(shr_cycle_general_material_3);
+        cycle_materials.push_back(shr_cycle_general_material_3);
+        //cycle->material_ptrs.push_back(shr_cycle_general_material_3);
 
         //6
         std::shared_ptr<Material> shr_cycle_general_material_4 = shr_cycle_general_material;
-        cycle->material_ptrs.push_back(shr_cycle_general_material_4);
+        cycle_materials.push_back(shr_cycle_general_material_4);
+        //cycle->material_ptrs.push_back(shr_cycle_general_material_4);
 
         //7
         std::shared_ptr<Material> shr_cycle_general_material_5 = shr_cycle_general_material;
-        cycle->material_ptrs.push_back(shr_cycle_general_material_5);
+        cycle_materials.push_back(shr_cycle_general_material_5);
+        //cycle->material_ptrs.push_back(shr_cycle_general_material_5);
 
-        cycle->set_materials_for_meshes();
+        //cycle->set_materials_for_meshes();
+
+
+        std::shared_ptr<Renderable> cycle = std::make_shared<Renderable>(mesh_vec, cycle_materials);
+
+        this->renderables.insert({"cycle",  cycle});
+        //cycle->translate(glm::vec3(0.0, 0.2, 0.0));
+        cycle->setPosition(glm::vec3(0.0, 0.0, 0.0));
+        cycle->rotate(glm::quat(glm::vec3(glm::degrees(0.85),glm::degrees(90.0),0)));
+
+
+
+
+
+
 
         /*
         std::vector<Material> cycle_materials;
@@ -177,15 +210,29 @@ bool Scene::init()
 
 
         //========== Ground ==========
-        OBJResult objr_g = OBJLoader::loadOBJ("assets/models/ground.obj" , false, false);
-        std::shared_ptr<Renderable> ground = std::make_shared<Renderable>(objr_g, glm::vec3(0.0, 1.0, 1.0),
-                                                                          glm::vec3(1.0, 1.0, 1.0), 50.0);
+        //OBJResult objr_g = OBJLoader::loadOBJ("assets/models/ground.obj" , false, false);
+        //std::shared_ptr<Renderable> ground = std::make_shared<Renderable>(objr_g, glm::vec3(0.0, 1.0, 1.0),
+        //                                                                  glm::vec3(1.0, 1.0, 1.0), 50.0);
+
+        //std::vector<Mesh> mesh_vec;
+        //OBJLoader::loadOBJ_alt(mesh_vec, "assets/Light Cycle Textures/Light Cycle/cycle_blender.obj" , false, false);
+
+        std::vector<Mesh> ground_mesh_vec;
+        OBJLoader::loadOBJ_alt(ground_mesh_vec, "assets/models/ground_blender.obj" , false, false);
+
+        std::vector<std::shared_ptr<Material>> ground_materials;
+
+        std::shared_ptr<Material> shr_ground_material = std::make_shared<Material>(52, 100);
+        shr_ground_material->load_texture(shr_ground_material->diffuse_id ,"assets/textures/ground/ground_diff.png");
+        shr_ground_material->load_texture(shr_ground_material->emissive_id ,"assets/textures/ground/ground_emit.png");
+        shr_ground_material->load_texture(shr_ground_material->spec_id ,"assets/textures/ground/ground_spec.png");
+
+        ground_materials.push_back(shr_ground_material);
+
+        std::shared_ptr<Renderable> ground = std::make_shared<Renderable>(ground_mesh_vec, ground_materials);
 
 
-
-
-        //set material
-        std::cout << "setting materials:" << std::endl;
+        //std::cout << "setting materials:" << std::endl;
 
         //ground_materials.push_back(ground_material);
         //ground->set_materials_for_meshes(ground_materials);
@@ -197,83 +244,9 @@ bool Scene::init()
         this->renderables.insert({"ground", ground });
 
 
-        //create materials with textures
-        //std::vector<Material> ground_materials;
+        //ground->material_ptrs.push_back(shr_ground_material);
 
-        /*
-        //GLuint id = 0;
-        //Texture2D ground_diff("assets/textures/ground/ground_diff.png", true, id);
-        //Texture2D ground_emss("assets/textures/ground/ground_emit.png", true, id);
-        //Texture2D ground_spec("assets/textures/ground/ground_spec.png", true, id);
-        //GLfloat ground_shiny = 52;
-        //GLfloat ground_texMulti = 100;
-        //Material ground_material(ground_diff, ground_emss, ground_spec, ground_shiny, ground_texMulti);
-
-        //Texture2D ground_diff;
-        //Texture2D ground_emss;
-        //Texture2D ground_spec;
-
-        //GLuint t1;
-        //ground_diff.load_texture("assets/textures/ground/ground_diff.png", t1);
-        //GLuint t2;
-        //ground_emss.load_texture("assets/textures/ground/ground_emit.png", t2);
-        //GLuint t3;
-        //ground_spec.load_texture("assets/textures/ground/ground_spec.png", t3);
-
-        //ground->load_textures();
-
-        //load_texture(t1, "assets/textures/ground/ground_diff.png");
-        */
-
-        /*
-        Material ground_material(ground_material.load_texture(ground_material.diffuse_id ,"assets/textures/ground/ground_diff.png"),
-                                 ground_material.load_texture(ground_material.emissive_id ,"assets/textures/ground/ground_emit.png"),
-                                 ground_material.load_texture(ground_material.spec_id ,"assets/textures/ground/ground_spec.png"),
-                                 52,
-                                 100
-                                 );
-        */
-
-        //Material ground_material(52, 100);
-
-        //ground_material.load_texture(ground->t1 ,"assets/textures/ground/ground_diff.png");
-        //ground_material.load_texture(ground->t2 ,"assets/textures/ground/ground_emit.png");
-        //ground_material.load_texture(ground->t3 ,"assets/textures/ground/ground_spec.png");
-
-
-
-        //ground_materials.push_back(ground_material);
-        //ground->set_materials_for_meshes(ground_materials);
-
-        std::shared_ptr<Material> shr_ground_material = std::make_shared<Material>(52, 100);
-
-        /*
-        shr_ground_material->load_texture(ground->t1 ,"assets/textures/ground/ground_diff.png");
-        shr_ground_material->load_texture(ground->t2 ,"assets/textures/ground/ground_emit.png");
-        shr_ground_material->load_texture(ground->t3 ,"assets/textures/ground/ground_spec.png");
-        */
-        shr_ground_material->load_texture(shr_ground_material->diffuse_id ,"assets/textures/ground/ground_diff.png");
-        shr_ground_material->load_texture(shr_ground_material->emissive_id ,"assets/textures/ground/ground_emit.png");
-        shr_ground_material->load_texture(shr_ground_material->spec_id ,"assets/textures/ground/ground_spec.png");
-
-        ground->material_ptrs.push_back(shr_ground_material);
-
-        ground->set_materials_for_meshes();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //ground->set_materials_for_meshes();
 
 
         /*

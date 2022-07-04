@@ -17,6 +17,10 @@ class Mesh
 {
 public:
     Mesh(){};
+
+    Mesh(std::vector<Vertex> vertexdata, std::vector<Index> indexdata)
+        : vertexdata(vertexdata), indexdata(indexdata) {}
+
     Mesh(std::vector<Vertex> vertexdata, std::vector<Index> indexdata, std::vector<VertexAttribute> attributes )
         : vertexdata(vertexdata), indexdata(indexdata), attributes(attributes) {std::cout << "mesh const" << std::endl;}
 
@@ -28,6 +32,9 @@ public:
               diffuse_colour(diffuse_colour),
               specular_reflection(specular_reflection),
               shininess(shininess) {}
+
+
+
 
 
     void setFloat(const std::string& name, const GLfloat floatv, ShaderProgram& sp) const
@@ -99,6 +106,8 @@ public:
     bool create_example_index_data();
     bool create_example_attributes();
 
+    std::vector<Vertex> get_vertexData() {return vertexdata;}
+    std::vector<Index> get_indexData() {return indexdata;}
 
     std::shared_ptr<Material> material_ptr;
 
@@ -115,9 +124,6 @@ private:
     GLuint vaoID, vboID, iboID;
 
     std::shared_ptr<Mesh> parent;
-
-
-
 
 };
 

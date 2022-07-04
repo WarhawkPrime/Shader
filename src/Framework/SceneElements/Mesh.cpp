@@ -41,6 +41,7 @@ void Mesh::init()
         //to determine number of values for an attribute, switch case with type?
         unsigned int ver_attr_counter = 0;
 
+        /*
         for (const auto& va : this->attributes)
         {
 
@@ -52,11 +53,27 @@ void Mesh::init()
             std::cout << " vec offset: " << va.offset << std::endl;
 
 
-            glVertexAttribPointer(ver_attr_counter , va.n, va.type, false, va.stride, (void*) va.offset);
             glEnableVertexAttribArray(ver_attr_counter);
+            glVertexAttribPointer(ver_attr_counter , va.n, va.type, false, sizeof(Vertex), (void*)  va.offset);
+
+
 
             ver_attr_counter++;
         }
+        */
+        //vertex pos
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0);
+        //vertex uv
+        glEnableVertexAttribArray(1);
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, uv));
+        //vertex normal
+        glEnableVertexAttribArray(2);
+        glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
+        //vertex tagent
+        //glEnableVertexAttribArray(3);
+        //glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, tangent));
+
 
         glGenBuffers(1, &iboID);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboID);

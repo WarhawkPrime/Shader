@@ -23,6 +23,7 @@ struct Vertex
 {
     Vertex() {}
     Vertex(glm::vec3 pos, glm::vec2 uv) : position(pos), uv(uv) {}
+    Vertex(glm::vec3 pos, glm::vec2 uv, glm::vec3 nor) : position(pos), uv(uv), normal(nor) {}
 
 	glm::vec3 position;
     glm::vec2 uv;

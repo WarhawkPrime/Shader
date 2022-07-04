@@ -411,4 +411,9 @@ CMakeFiles/Shaderentwicklung.dir/src/Framework/Assets/AssetManager.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
- D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/framework/CommonTypes.h
+ D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/framework/CommonTypes.h \
+ D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Mesh.h \
+ D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Material.h \
+ D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Texture2D.h \
+ D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/framework/OBJ_Loader_Ext.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h

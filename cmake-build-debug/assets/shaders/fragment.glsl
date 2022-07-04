@@ -77,8 +77,6 @@ void main()
     //result += CalcSpotLight(spotLight, norm, FragPos, viewDir);
 
     color = vec4(result, 1.0);
-
-
 }
 
 
@@ -143,16 +141,3 @@ vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
 
     return (ambient + diffuse + specular);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

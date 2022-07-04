@@ -22,6 +22,8 @@ class Renderable : public Transform
 public:
     Renderable(){}
 
+    Renderable(std::vector<Mesh> mesh_vec, std::vector<std::shared_ptr<Material>> &materials);
+
     Renderable(OBJResult& obj);
 
     Renderable(OBJResult& obj, std::shared_ptr<Renderable> &parent);

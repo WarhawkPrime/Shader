@@ -11,6 +11,10 @@
 #include <unordered_map>
 #include <CommonTypes.h>
 
+#include "Mesh.h"
+
+#include "OBJ_Loader_Ext.h"
+
 //------------------------------ istream string helper ----------------------------------------
 
 class istreamhelper
@@ -220,7 +224,7 @@ private:
 public:
 	static OBJResult loadOBJ(const std::string& objpath, bool calcnormals = false, bool calctangents = false);
 
-    static void loadOBJ_alt(const std::string& objpath, bool calcnormals = false, bool calctangents = false);
+    static void loadOBJ_alt(std::vector<Mesh> &mesh_vec , const std::string& objpath, bool calcnormals = false, bool calctangents = false);
 
 	class DataCache
 	{
@@ -272,6 +276,13 @@ public:
 	public:
 		std::vector<VertexDef> verts;
 	};
+
+
+
+    //void parse_meshes(objl::Mesh mesh);
+
+
+
 
 private:
 	//parsing helpers

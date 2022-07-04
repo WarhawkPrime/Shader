@@ -3,7 +3,7 @@
 layout (location = 0) in vec3 pos;  //v geometric vertices
 layout (location = 1) in vec2 vt;   //texture vertices
 layout (location = 2) in vec3 aNormal;  //vn vertex normals
-layout (location = 3) in vec3 f;       //face
+//layout (location = 3) in vec3 f;       //face
 
 
 uniform mat4 model_m;

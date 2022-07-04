@@ -24,10 +24,6 @@ OBJResult OBJLoader::loadOBJ(const std::string & objpath, bool calcnormals, bool
 		DataCache cache;
 		while (istreamhelper::peekString(stream, command))
 		{
-            if (command == "usemtl")
-                std::cout << "command: " << command << std::endl;
-
-
 			if (command == "o")
 			{
 				result.objects.push_back(parseObject(cache, stream, calcnormals, calctangents));

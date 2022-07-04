@@ -112,6 +112,29 @@ Renderable::Renderable(OBJResult& obj, std::vector<Material> &materials)
 }
 
 
+Renderable::Renderable(std::vector<Mesh> mesh_vec, std::vector<std::shared_ptr<Material>> &materials)
+{
+
+    this->material_ptrs = materials;
+
+    size_t mat_counter = 0;
+    for (auto& m : mesh_vec)
+    {
+        std::shared_ptr<Mesh> mp = std::make_shared<Mesh>(m.get_vertexData(), m.get_indexData());
+
+        //mp->set_Material(materials.at(mat_counter).get() );
+
+        mp->material_ptr = materials.at(mat_counter);
+
+        mp.get()->init();
+
+        this->meshes.push_back(mp);
+
+        mat_counter++;
+    }
+}
+
+
 
 /// render all meshes. Set all translations and then render all meshes
 /// \return

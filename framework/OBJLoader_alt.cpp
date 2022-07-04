@@ -4,51 +4,79 @@
 
 #include "OBJLoader.h"
 
-void OBJLoader::loadOBJ_alt(const std::string & objpath, bool calcnormals, bool calctangents) {
-    OBJResult result;
-
-    std::cout << "alt loading" << std::endl;
-
-    try {
-        std::ifstream stream(objpath, std::ios_base::in | std::ios_base::binary);
-        stream.exceptions(std::ifstream::badbit);
-        if (!stream.is_open())
-            throw std::logic_error("OBJ file not found.");
-
-        std::string command = "";
-        DataCache cache;
+#include "Mesh.h"
 
 
+//#include "OBJ_Loader.h" //loader
 
-        //while(std::getline(stream, line))
-        //{
+#include "Mesh.h"
 
-        //}
-        while (istreamhelper::peekString(stream, command))
-        {
-            if (command == "o")
+void OBJLoader::loadOBJ_alt(std::vector<Mesh> &mesh_vec, const std::string & objpath, bool calcnormals, bool calctangents) {
+
+    // Initialize Loader
+    objl::Loader Loader;
+
+    // Load .obj File
+    bool loadout = Loader.LoadFile(objpath);
+
+    // Check to see if it loaded
+
+    // If so continue
+    if (loadout) {
+
+        std::cout << "meshes count: " << Loader.LoadedMeshes.size() << std::endl;
+
+        // Go through each loaded mesh and out its contents
+        for (int i = 0; i < Loader.LoadedMeshes.size(); i++) {
+
+            std::vector<Vertex> vertexData;
+            std::vector<Index> indexData;
+
+            // Copy one of the loaded meshes to be our current mesh
+            objl::Mesh curMesh = Loader.LoadedMeshes[i];
+
+            //get vertices
+            std::vector<objl::Vertex> objl_vertices = curMesh.Vertices;
+            for (auto &objl_ver : objl_vertices)
             {
-                std::cout << "command: " << command << std::endl;
-                //result.objects.push_back(parseObject(cache, stream, calcnormals, calctangents));
+
+                Vertex ver(
+                        glm::vec3(objl_ver.Position.X, objl_ver.Position.Y, objl_ver.Position.Z ),
+                       glm::vec2(objl_ver.TextureCoordinate.X, objl_ver.TextureCoordinate.Y ),
+                       glm::vec3(objl_ver.Normal.X, objl_ver.Normal.Y, objl_ver.Normal.Z)
+                       );
+
+                vertexData.push_back(ver);
             }
-            else if (command == "usemtl")
+
+            //get indices
+            std::vector<unsigned int> objl_indices =  curMesh.Indices;
+            for (auto &objl_ind : objl_indices)
             {
-                std::cout << "command: " << command << std::endl;
+                Index index = (GLuint) objl_ind;
+
+                indexData.push_back(index);
             }
 
-            stream.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            //generate mesh and add to vector
+            Mesh mesh(vertexData, indexData);
 
+            mesh_vec.push_back(mesh);
         }
-
-        stream.close();
-
-
-    }catch (const std::exception& ex)
-    {
-        std::cerr << "Error: Loading OBJ failed: " << ex.what() << "\n";
-        throw ex;
     }
-
-    //result.objname = objpath;
-    //return result;
 }
+
+/*
+void OBJLoader::parse_meshes(objl::Mesh objl_mesh)
+{
+    std::vector<unsigned int> vertices = objl_mesh.Indices;
+
+    std::vector<objl::Vertex> objl_vertices = objl_mesh.Vertices;
+
+
+
+
+
+}
+
+ */
