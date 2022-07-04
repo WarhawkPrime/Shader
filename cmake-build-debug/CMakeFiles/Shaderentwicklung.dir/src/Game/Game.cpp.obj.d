@@ -430,10 +430,16 @@ CMakeFiles/Shaderentwicklung.dir/src/Game/Game.cpp.obj: \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/framework/OBJ_Loader_Ext.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/math.h \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Renderable.h \
- D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Mesh.h \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Transform.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_list.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_map.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_multimap.h \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Camera.h \
- D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Renderable.h \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/PointLight.h \
+ D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/Transform.h \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/SpotLight.h \
  D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/SceneElements/PointLight.h

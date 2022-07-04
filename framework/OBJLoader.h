@@ -12,7 +12,6 @@
 #include <CommonTypes.h>
 
 #include "Mesh.h"
-
 #include "OBJ_Loader_Ext.h"
 
 //------------------------------ istream string helper ----------------------------------------

@@ -1,6 +1,6 @@
 #version 330 core
 
-// ========== struct definitions ==========
+
 
 struct Material {
     sampler2D diffuse;
@@ -74,7 +74,7 @@ void main()
     vec3 result = CalcPointLight(pointLight, norm, FragPos, viewDir);
 
     //spot light
-    //result += CalcSpotLight(spotLight, norm, FragPos, viewDir);
+    result += CalcSpotLight(spotLight, norm, FragPos, viewDir);
 
     color = vec4(result, 1.0);
 }

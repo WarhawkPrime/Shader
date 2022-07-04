@@ -1,59 +1,56 @@
 //
-// Created by denni on 18/06/2022.
+// Created by alex1 on 20.06.2022.
 //
 
 #include "PointLight.h"
 
-PointLight::PointLight(glm::vec3 pos, glm::vec3 colour)
-{
-    setPosition(pos);
-    this->colour = colour;
+/*
+PointLight::PointLight(const glm::vec3& pos, const glm::vec3& lightColor, float c, float l, float q) : Transform(pos, glm::quat(0, 0, 0, 0), glm::vec3(1)) {
+
+    LightPos = pos;
+    this->lightColor = lightColor;
+    constant = c;
+    linear = l;
+    quadratic = q;
+
+}
+*/
+
+void PointLight::bind(ShaderProgram& shaderProgram) {
+
+
+    setVec3("pointLight.position", this->getCombinedPosition(), shaderProgram  );
+
+    setVec3("pointLight.diffuse", this->get_colour(), shaderProgram  );
+
+    setVec3("pointLight.ambient", this->get_ambient(), shaderProgram  );
+
+    setVec3("pointLight.specular", this->get_lightSpec(), shaderProgram  );
+
+
+    setFloat("pointLight.constant", this->getConstant(), shaderProgram);
+
+    setFloat("pointLight.linear", this->getLinear(), shaderProgram);
+
+    setFloat("pointLight.quadratic", this->getQuadratic(), shaderProgram);
+
+
 }
 
-PointLight::PointLight(glm::vec3 pos, glm::vec3 colour, glm::vec3 ambient, glm::vec3 spec)
-{
-    setPosition(pos);
-    this->colour = colour;
-    this->ambient = ambient;
-    this->spec = spec;
+/*
+const glm::vec3 &PointLight::getColor() const {
+    return lightColor;
+}
+ */
+
+float PointLight::getConstant() const {
+    return constant;
 }
 
-bool PointLight::bind(ShaderProgram& sp)
-{
-    /*
-    this->setVec3("lightpos_v", getPosition(), sp );
+float PointLight::getLinear() const {
+    return linear;
+}
 
-    this->setVec3("lightcolour_v", colour, sp );
-
-    //extra
-    this->setVec3("light_amb", ambient, sp);
-    this->setVec3("light_spec", spec, sp);
-     */
-
-    //fill struct Point
-    // Lightstruct PointLight {
-    //    vec3 position;
-    //
-    //    float constant;
-    //    float linear;
-    //    float quadratic;
-    //
-    //    vec3 ambient;
-    //    vec3 diffuse;
-    //    vec3 specular;
-    //};
-
-    //uniform PointLight pointLight;
-
-    this->setVec3("pointLight.position", getPosition(), sp);
-    this->setVec3("pointLight.ambient", ambient, sp);
-    this->setVec3("pointLight.diffuse", colour, sp);
-    this->setVec3("pointLight.specular", spec, sp);
-
-    this->setFloat("pointLight.constant", 1.0f, sp);
-    this->setFloat("pointLight.linear", 0.09f, sp);
-    this->setFloat("pointLight.quadratic", 0.032f, sp);
-
-
-    return true;
+float PointLight::getQuadratic() const {
+    return quadratic;
 }

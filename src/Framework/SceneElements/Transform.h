@@ -1,61 +1,67 @@
 #ifndef _TRANSFORM_H_
 #define _TRANSFORM_H_
 #include <libheaders.h>
-
 class Transform
 {
-protected:
-	glm::mat4 m_transformMatrix;
-	bool m_matrixDirty;
+private:
+    glm::mat4 m_transformMatrix;
+    bool m_matrixDirty;
 
-	glm::vec3 m_position;
-	glm::quat m_rotation;
-	glm::vec3 m_scale;
-			  
-	glm::vec3 m_xaxis;
-	glm::vec3 m_yaxis;
-	glm::vec3 m_zaxis;
+    glm::vec3 m_position;
+    glm::quat m_rotation;
+    glm::vec3 m_scale;
 
-	void updateTransformMatrix();
+    glm::vec3 m_xaxis;
+    glm::vec3 m_yaxis;
+    glm::vec3 m_zaxis;
+    Transform* m_parent = nullptr;
+
+
+    void updateTransformMatrix();
 
 public:
-	Transform();
-	~Transform();
-	Transform(const Transform& other) = default;
-	Transform& operator=(const Transform& other) = default;
-	Transform(Transform&& other) = default;
-	Transform& operator=(Transform&& other) = default;
-	Transform(const glm::mat4& transformMatrix);
-	Transform(const glm::vec3& position, const glm::quat& rotation, const glm::vec3& scale);
+    Transform();
+    ~Transform();
+    Transform(const Transform& other) = default;
+    Transform& operator=(const Transform& other) = default;
+    Transform(Transform&& other) = default;
+    Transform& operator=(Transform&& other) = default;
+    Transform(const glm::mat4& transformMatrix);
+    Transform(const glm::vec3& position, const glm::quat& rotation, const glm::vec3& scale);
+    glm::vec3 getCombinedPosition();
+    const glm::vec3& getPosition();
+    const glm::quat& getRotation();
+    const glm::vec3& getScale();
 
-	const glm::vec3& getPosition();
-	const glm::quat& getRotation();
-	const glm::vec3& getScale();
+    void setPosition(const glm::vec3& position);
+    void setRotation(const glm::quat& rotation);
+    void setScale(const glm::vec3& scale);
 
-	void setPosition(const glm::vec3& position);
-	void setRotation(const glm::quat& rotation);
-	void setScale(const glm::vec3& scale);
+    const glm::mat4& getMatrix();
+    void setMatrix(const glm::mat4& matrix);
 
-	const glm::mat4& getMatrix();
-	void setMatrix(const glm::mat4& matrix);
+    void translate(const glm::vec3& deltaPos);
+    void translateLocal(const glm::vec3& deltaPos);
 
-	void translate(const glm::vec3& deltaPos);
-	void translateLocal(const glm::vec3& deltaPos);
+    void rotate(const glm::quat& deltaRot);
+    void rotateLocal(const glm::quat& deltaRot);
 
-	void rotate(const glm::quat& deltaRot);
-	void rotateLocal(const glm::quat& deltaRot);
+    void scale(const glm::vec3& scale);
 
-	void scale(const glm::vec3& scale);
+    const glm::vec3& getXAxis();
+    const glm::vec3& getYAxis();
+    const glm::vec3& getZAxis();
 
-	const glm::vec3& getXAxis();
-	const glm::vec3& getYAxis();
-	const glm::vec3& getZAxis();
+    const glm::mat4& getTransformMatrix();
 
-	const glm::mat4& getTransformMatrix();
+    glm::vec3 getDirection();
+    void lookinto(const glm::vec3& direction);
 
-	glm::vec3 getDirection();
-	void lookinto(const glm::vec3& direction);
+    glm::mat4 getInverseMatrix();
 
-	glm::mat4 getInverseMatrix();	
+    void setParent(Transform *parent);
+    Transform *getParent();
+    glm::mat4 getCombinedMatrix();
 };
+
 #endif

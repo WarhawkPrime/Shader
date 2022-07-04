@@ -1,21 +1,35 @@
-//
-// Created by denni on 28/06/2022.
-//
-
 #ifndef SHADERENTWICKLUNG_SPOTLIGHT_H
 #define SHADERENTWICKLUNG_SPOTLIGHT_H
-
 #include "PointLight.h"
 
-class SpotLight : public PointLight{
-
+class SpotLight : public PointLight {
 public:
-    SpotLight() {};
 
-    SpotLight(float phi, glm::vec3 light_dir, glm::vec3 pos, glm::vec3 colour, glm::vec3 ambient, glm::vec3 spec) :
-        phi(phi), light_direction(light_dir), PointLight(pos, colour, ambient, spec) {};
+    //SpotLight(const glm::vec3& pos, const glm::vec3& lightColor,const glm::vec3 Dir, float innerCone, float outerCone, float c, float l , float q);
 
-    bool bind(ShaderProgram& sp);
+
+    SpotLight(const glm::vec3 pos, const glm::vec3 lightColor,  const glm::vec3 lightAmbient, glm::vec3 lightSpec, const glm::vec3 Dir, float innerCone, float outerCone, float c, float l , float q)
+        : direction(Dir), innerCone(innerCone), outerCone(outerCone), PointLight(pos, lightColor, lightAmbient, lightSpec, c, l, q) {}
+
+
+
+
+    void bind(ShaderProgram& shaderProgram);
+
+    void setInnerCone(float innerCone);
+
+    void setOuterCone(float outerCone);
+
+    const glm::vec3 &getSpotlightDirection() const;
+
+    void setDirection(const glm::vec3 &direction);
+
+    void setVec3(const std::string& name, const glm::vec3& vec, ShaderProgram& sp) const
+    {
+        GLint vec_loc = glGetUniformLocation(sp.prog, name.c_str());
+
+        glUniform3fv(vec_loc, 1, glm::value_ptr(vec));
+    }
 
     void setFloat(const std::string& name, const GLfloat floatv, ShaderProgram& sp) const
     {
@@ -25,13 +39,10 @@ public:
     }
 
 private:
-    float phi;  //cutoff, specifies radius
+    glm::vec3 direction;
+    float innerCone;
+    float outerCone;
 
-    //float spot_dir; ?
-
-    float theta;    //theta, angle between lightdir and spotdir. should be inside phi. Calculated in shader
-
-    glm::vec3 light_direction;
 };
 
 

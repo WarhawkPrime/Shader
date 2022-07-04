@@ -1,55 +1,92 @@
-//
-// Created by denni on 28/06/2022.
-//
-
 #include "SpotLight.h"
-bool SpotLight::bind(ShaderProgram& sp)
+
+/*
+SpotLight::SpotLight(const glm::vec3 &pos, const glm::vec3 &lightColor, const glm::vec3 Dir, float innerCone,
+                     float outerCone, float c, float l , float q) : PointLight(pos,lightColor,c,l,q) {
+    this->direction = Dir;
+    this->innerCone = innerCone;
+    this->outerCone = outerCone;
+
+
+}
+*/
+
+
+void SpotLight::setInnerCone(float innerCone) {
+    SpotLight::innerCone = innerCone;
+}
+
+
+
+void SpotLight::setOuterCone(float outerCone) {
+    SpotLight::outerCone = outerCone;
+}
+
+const glm::vec3 &SpotLight::getSpotlightDirection() const {
+    return direction;
+}
+
+void SpotLight::setDirection(const glm::vec3 &direction) {
+    SpotLight::direction = direction;
+}
+
+void SpotLight::bind(ShaderProgram& shaderProgram)
 {
+
+    setVec3("spotLight.position", this->getCombinedPosition(), shaderProgram  );
+
+    setVec3("spotLight.diffuse", this->get_colour(), shaderProgram  );
+
+    setVec3("spotLight.ambient", this->get_ambient(), shaderProgram  );
+
+    setVec3("spotLight.specular", this->get_lightSpec(), shaderProgram  );
+
+
+    setFloat("spotLight.constant", this->getConstant(), shaderProgram);
+
+    setFloat("spotLight.linear", this->getLinear(), shaderProgram);
+
+    setFloat("spotLight.quadratic", this->getQuadratic(), shaderProgram);
+
     /*
-    this->setVec3("lightpos_spot", getPosition(), sp );
+    this->setVec3("spotLight.position", getPosition(), shaderProgram);
+    this->setVec3("spotLight.ambient", ambient, shaderProgram);
+    this->setVec3("spotLight.diffuse", colour, shaderProgram);
+    this->setVec3("spotLight.specular", spec, shaderProgram);
 
-    this->setVec3("lightcolour_spot", colour, sp );
-
-    //extra
-    this->setVec3("light_amb_spot", ambient, sp);
-    this->setVec3("light_spec_spot", spec, sp);
-
-    this->setFloat("cutOff_spot", glm::cos(glm::radians(phi)), sp);
-
-    this->setVec3("lightDir_spot", light_direction, sp);
+    this->setFloat("pointLight.constant", 1.0f, shaderProgram);
+    this->setFloat("pointLight.linear", 0.09f, shaderProgram);
+    this->setFloat("pointLight.quadratic", 0.032f, shaderProgram);
     */
 
-    //fill spotLight struct
-    // struct SpotLight {
-    //    vec3 position;
-    //    vec3 direction;
-    //    float cutOff;
-    //    float outerCutOff;
-    //
-    //    float constant;
-    //    float linear;
-    //    float quadratic;
-    //
-    //    vec3 ambient;
-    //    vec3 diffuse;
-    //    vec3 specular;
-    //};
+    this->setVec3("spotLight.direction", this->getSpotlightDirection(), shaderProgram);
+    this->setFloat("spotLight.cutOff", glm::cos(glm::radians(this->innerCone)), shaderProgram);               //TODO: phi
+    this->setFloat("spotLight.outerCutOff", glm::cos(glm::radians(this->outerCone)), shaderProgram);        //TODO: theta
+    
 
-    //uniform SpotLight spotLight;
-
-    this->setVec3("spotLight.position", getPosition(), sp);
-    this->setVec3("spotLight.ambient", ambient, sp);
-    this->setVec3("spotLight.diffuse", colour, sp);
-    this->setVec3("spotLight.specular", spec, sp);
-
-    this->setFloat("pointLight.constant", 1.0f, sp);
-    this->setFloat("pointLight.linear", 0.09f, sp);
-    this->setFloat("pointLight.quadratic", 0.032f, sp);
-
-    this->setVec3("spotLight.direction", light_direction, sp);
-    this->setFloat("pointLight.cutOff", glm::cos(glm::radians(12.5f)), sp);               //TODO: phi
-    this->setFloat("pointLight.outerCutOff", glm::cos(glm::radians(15.0f)), sp);        //TODO: theta
+    /*
+    GLint light_pos_loc = glGetUniformLocation(shaderProgram->prog, "lightPosSpot");
+    glProgramUniform3fv(shaderProgram->prog, light_pos_loc, 1, &this->getCombinedPosition()[0]);
 
 
-    return true;
+    GLint light_col_loc = glGetUniformLocation(shaderProgram->prog, "lightColorSpot");
+    glProgramUniform3fv(shaderProgram->prog, light_col_loc, 1, &this->getColor()[0]);
+
+    GLint SpotDirection = glGetUniformLocation(shaderProgram->prog, "SpotDirection");
+    glProgramUniform3fv(shaderProgram->prog, SpotDirection, 1, &this->getSpotlightDirection()[0]);
+
+
+    GLint innerCone = glGetUniformLocation(shaderProgram->prog, "innerCone");
+    glProgramUniform1f(shaderProgram->prog, innerCone, this->innerCone);
+    GLint outerCone = glGetUniformLocation(shaderProgram->prog, "outerCone");
+    glProgramUniform1f(shaderProgram->prog, outerCone, this->outerCone);
+
+
+    GLint c = glGetUniformLocation(shaderProgram->prog, "constantSpot");
+    glProgramUniform1f(shaderProgram->prog, c, this->getConstant());
+    GLint l = glGetUniformLocation(shaderProgram->prog, "linearSpot");
+    glProgramUniform1f(shaderProgram->prog, l, this->getLinear());
+    GLint q = glGetUniformLocation(shaderProgram->prog, "quadraticSpot");
+    glProgramUniform1f(shaderProgram->prog, q, this->getQuadratic());
+     */
 }

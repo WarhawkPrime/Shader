@@ -196,3 +196,13 @@ An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\F
 invalid value
 An OpenGL error occured at file: "D:\Documents\Uni\Master\SS_22\Shader\Project\Framework\Framework\src\Framework\Assets\ShaderProgram.cpp", line: 47:
 invalid value
+An OpenGL error occured at file: "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/Assets/ShaderProgram.h", line: 159:
+invalid operation
+An OpenGL error occured at file: "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/Assets/ShaderProgram.h", line: 160:
+invalid operation
+An OpenGL error occured at file: "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/Assets/ShaderProgram.h", line: 163:
+invalid operation
+An OpenGL error occured at file: "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/Assets/ShaderProgram.h", line: 163:
+invalid operation
+An OpenGL error occured at file: "D:/Documents/Uni/Master/SS_22/Shader/Project/Framework/Framework/src/Framework/Assets/ShaderProgram.h", line: 161:
+invalid operation

@@ -4,12 +4,10 @@
 
 #include "OBJLoader.h"
 
-#include "Mesh.h"
 
 
 //#include "OBJ_Loader.h" //loader
 
-#include "Mesh.h"
 
 void OBJLoader::loadOBJ_alt(std::vector<Mesh> &mesh_vec, const std::string & objpath, bool calcnormals, bool calctangents) {
 
