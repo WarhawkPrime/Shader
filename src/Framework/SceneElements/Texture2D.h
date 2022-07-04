@@ -9,6 +9,8 @@
 #include <glerror.h>
 #include "ShaderProgram.h"
 
+//Aufgrund von nicht-lösbaren Fehlern wurde die Klasse Texture2D nicht genutzt, die selbe Funktionalität wurde auf
+// die Klasse Material verschoben.
 
 class Texture2D {
 private:

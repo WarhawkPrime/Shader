@@ -14,6 +14,11 @@
 #include "Mesh.h"
 #include "OBJ_Loader_Ext.h"
 
+//der OBJLoader ist nicht in der Lage, mehrere Meshes aus einer .obj File zu lesen. Aufgrund des beträchtlichen Aufwands
+//den bestehenden OBJLoader zu verändern, wurde auf eine externe lightweight Header-lib zurückgegriffen. Diese wurde
+//verändert und durch eine Wrapper-Funktion an unsere Bedürfnisse angepasst.
+
+
 //------------------------------ istream string helper ----------------------------------------
 
 class istreamhelper
