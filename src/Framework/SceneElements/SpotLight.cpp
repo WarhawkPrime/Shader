@@ -62,7 +62,7 @@ void SpotLight::bind(ShaderProgram& shaderProgram)
     this->setVec3("spotLight.direction", this->getSpotlightDirection(), shaderProgram);
     this->setFloat("spotLight.cutOff", glm::cos(glm::radians(this->innerCone)), shaderProgram);               //TODO: phi
     this->setFloat("spotLight.outerCutOff", glm::cos(glm::radians(this->outerCone)), shaderProgram);        //TODO: theta
-    
+
 
     /*
     GLint light_pos_loc = glGetUniformLocation(shaderProgram->prog, "lightPosSpot");

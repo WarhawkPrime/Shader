@@ -125,6 +125,13 @@ Renderable::Renderable(ShaderProgram &shaderProgram, std::string name)
 
 void Renderable::createMaterials(std::string name)
 {
+
+    std::shared_ptr<Material> basic_material = std::make_shared<Material>(52, 1);
+
+    basic_material->load_texture(basic_material->diffuse_id ,"assets/textures/black.png");
+    basic_material->load_texture(basic_material->emissive_id ,"assets/textures/black.png");
+    basic_material->load_texture(basic_material->spec_id ,"assets/textures/black.png");
+
     if(name.find("ground") != std::string::npos){
 
         //creating materials
@@ -132,12 +139,10 @@ void Renderable::createMaterials(std::string name)
 
         //0
         std::shared_ptr<Material> shr_ground_material = std::make_shared<Material>(52, 100);
-        //shr_ground_material->load_texture(shr_ground_material->diffuse_id ,"assets/textures/ground/ground_diff.png");
-        //shr_ground_material->load_texture(shr_ground_material->emissive_id ,"assets/textures/ground/ground_emit.png");
-        //shr_ground_material->load_texture(shr_ground_material->spec_id ,"assets/textures/ground/ground_spec.png");
-        shr_ground_material->load_texture(shr_ground_material->diffuse_id ,"assets/textures/black.png");
-        shr_ground_material->load_texture(shr_ground_material->emissive_id ,"assets/textures/black.png");
-        shr_ground_material->load_texture(shr_ground_material->spec_id ,"assets/textures/black.png");
+
+        shr_ground_material->load_texture(shr_ground_material->diffuse_id ,"assets/textures/ground/ground_diff.png");
+        shr_ground_material->load_texture(shr_ground_material->emissive_id ,"assets/textures/ground/ground_emit.png");
+        shr_ground_material->load_texture(shr_ground_material->spec_id ,"assets/textures/ground_emit.png");
         ground_materials.push_back(shr_ground_material);
 
         //setting material
@@ -162,6 +167,7 @@ void Renderable::createMaterials(std::string name)
         shr_cycle_body_material->load_texture(shr_cycle_body_material->emissive_id ,"assets/textures/cycle/MG_MovieCycle_Body_EMSS.tga");
         shr_cycle_body_material->load_texture(shr_cycle_body_material->spec_id ,"assets/textures/cycle/MG_MovieCycle_Body_SPEC.tga");
 
+        //cycle_materials.push_back(shr_cycle_body_material);
         cycle_materials.push_back(shr_cycle_body_material);
 
 
@@ -170,41 +176,53 @@ void Renderable::createMaterials(std::string name)
         shr_cycle_general_material->load_texture(shr_cycle_general_material->diffuse_id ,"assets/textures/black.png");
         shr_cycle_general_material->load_texture(shr_cycle_general_material->emissive_id ,"assets/textures/black.png");
         shr_cycle_general_material->load_texture(shr_cycle_general_material->spec_id ,"assets/textures/black.png");
-
         cycle_materials.push_back(shr_cycle_general_material);
-        //cycle->material_ptrs.push_back(shr_cycle_general_material);
+
 
         //2
-        std::shared_ptr<Material> shr_cycle_tire_material = std::make_shared<Material>(32, 1);
+        std::shared_ptr<Material> shr_cycle_tire_material = std::make_shared<Material>(40, 1);
         shr_cycle_tire_material->load_texture(shr_cycle_tire_material->diffuse_id ,"assets/textures/cycle/MG_MovieCycle_Tire_DIFF.tga");
         shr_cycle_tire_material->load_texture(shr_cycle_tire_material->emissive_id ,"assets/textures/cycle/MG_MovieCycle_Tire_EMSS.tga");
         shr_cycle_tire_material->load_texture(shr_cycle_tire_material->spec_id ,"assets/textures/black.png");
-
         cycle_materials.push_back(shr_cycle_tire_material);
-        //cycle->material_ptrs.push_back(shr_cycle_tire_material);
+
 
         //3
-        std::shared_ptr<Material> shr_cycle_general_material_1 = shr_cycle_general_material;
+        std::shared_ptr<Material> shr_cycle_general_material_1 = std::make_shared<Material>(32, 1) ;
+        shr_cycle_general_material_1->load_texture(shr_cycle_general_material_1->diffuse_id ,"assets/textures/cycle/MG_MovieCycle_Engine_DIFF.tga");
+        shr_cycle_general_material_1->load_texture(shr_cycle_general_material_1->emissive_id ,"assets/textures/cycle/MG_MovieCycle_Engine_EMSS.tga");
+        shr_cycle_general_material_1->load_texture(shr_cycle_general_material_1->spec_id ,"assets/textures/black.png");
         cycle_materials.push_back(shr_cycle_general_material_1);
-        //cycle->material_ptrs.push_back(shr_cycle_general_material_1);
 
         //4
-        std::shared_ptr<Material> shr_cycle_general_material_2 = shr_cycle_general_material;
+        std::shared_ptr<Material> shr_cycle_general_material_2 = std::make_shared<Material>(32, 1);
+        shr_cycle_general_material_2->load_texture(shr_cycle_general_material_2->diffuse_id ,"assets/textures/cycle/MG_Player_Body_DIFF.tga");
+        shr_cycle_general_material_2->load_texture(shr_cycle_general_material_2->emissive_id ,"assets/textures/cycle/MG_Player_Body_EMSS.tga");
+        shr_cycle_general_material_2->load_texture(shr_cycle_general_material_2->spec_id ,"assets/textures/cycle/MG_Player_Body_SPEC.tga");
         cycle_materials.push_back(shr_cycle_general_material_2);
-        //cycle->material_ptrs.push_back(shr_cycle_general_material_2);
+
 
         //5
-        std::shared_ptr<Material> shr_cycle_general_material_3 = shr_cycle_general_material;
+        std::shared_ptr<Material> shr_cycle_general_material_3 = std::make_shared<Material>(32, 1);
+        shr_cycle_general_material_3->load_texture(shr_cycle_general_material_3->diffuse_id ,"assets/textures/cycle/MG_Player_Helmet_DIFF.tga");
+        shr_cycle_general_material_3->load_texture(shr_cycle_general_material_3->emissive_id ,"assets/textures/cycle/MG_Player_Helmet_EMSS.tga");
+        shr_cycle_general_material_3->load_texture(shr_cycle_general_material_3->spec_id ,"assets/textures/cycle/MG_Player_Helmet_SPEC.tga");
         cycle_materials.push_back(shr_cycle_general_material_3);
-        //cycle->material_ptrs.push_back(shr_cycle_general_material_3);
+
 
         //6
-        std::shared_ptr<Material> shr_cycle_general_material_4 = shr_cycle_general_material;
+        std::shared_ptr<Material> shr_cycle_general_material_4 = std::make_shared<Material>(32, 1);
+        shr_cycle_general_material_4->load_texture(shr_cycle_general_material_4->diffuse_id ,"assets/textures/cycle/MG_Player_Disc_DIFF.tga");
+        shr_cycle_general_material_4->load_texture(shr_cycle_general_material_4->emissive_id ,"assets/textures/cycle/MG_Player_Disc_EMSS.tga");
+        shr_cycle_general_material_4->load_texture(shr_cycle_general_material_4->spec_id ,"assets/textures/cycle/MG_Player_Disc_SPEC.tga");
         cycle_materials.push_back(shr_cycle_general_material_4);
-        //cycle->material_ptrs.push_back(shr_cycle_general_material_4);
+
 
         //7
-        std::shared_ptr<Material> shr_cycle_general_material_5 = shr_cycle_general_material;
+        std::shared_ptr<Material> shr_cycle_general_material_5 = std::make_shared<Material>(32, 1);;
+        shr_cycle_general_material_5->load_texture(shr_cycle_general_material_5->diffuse_id ,"assets/textures/cycle/MG_Player_Baton_DIFF.tga");
+        shr_cycle_general_material_5->load_texture(shr_cycle_general_material_5->emissive_id ,"assets/textures/cycle/MG_Player_Baton_EMSS.tga");
+        shr_cycle_general_material_5->load_texture(shr_cycle_general_material_5->spec_id ,"assets/textures/cycle/MG_Player_Baton_SPEC.tga");
         cycle_materials.push_back(shr_cycle_general_material_5);
 
         size_t mat_counter = 0;

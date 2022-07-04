@@ -29,7 +29,7 @@ bool Scene::init()
 
         cycle = std::make_shared<Renderable>(*this->m_shader, "cycle");
         cycle->rotate(glm::quat(glm::vec3(glm::degrees(0.85),0,0)));
-        cycle->translate(glm::vec3(0,-0.25,0));
+        cycle->translate(glm::vec3(0,-0.0,0));
 
         ground = std::make_shared<Renderable>(*this->m_shader, "ground");
 
@@ -70,7 +70,7 @@ bool Scene::init()
         plight = std::make_shared<PointLight>(
                 glm::vec3(0, 0, 20),
                 glm::vec3(0.3, 0.3, 0.3),
-                glm::vec3(0.2, 0.2, 0.2),
+                glm::vec3(0.5, 0.5, 0.5),
                 glm::vec3(1.0, 1.0, 1.0),
                 1.0f,
                 0.5f,
@@ -139,8 +139,9 @@ void Scene::render(float dt)
     //myMotorCycle->render(*this->m_shader);
     //groundOBJ->render(*this->m_shader);
 
-    cycle->render_t(*this->m_shader);
     ground->render_t(*this->m_shader);
+    cycle->render_t(*this->m_shader);
+
 
 
 }
