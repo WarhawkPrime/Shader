@@ -5,10 +5,6 @@
 #include "OBJLoader.h"
 
 
-
-//#include "OBJ_Loader.h" //loader
-
-
 void OBJLoader::loadOBJ_alt(std::vector<Mesh> &mesh_vec, const std::string & objpath, bool calcnormals, bool calctangents) {
 
     // Initialize Loader
@@ -22,7 +18,7 @@ void OBJLoader::loadOBJ_alt(std::vector<Mesh> &mesh_vec, const std::string & obj
     // If so continue
     if (loadout) {
 
-        std::cout << "meshes count: " << Loader.LoadedMeshes.size() << std::endl;
+        //std::cout << "meshes count: " << Loader.LoadedMeshes.size() << std::endl;
 
         // Go through each loaded mesh and out its contents
         for (int i = 0; i < Loader.LoadedMeshes.size(); i++) {
@@ -63,18 +59,3 @@ void OBJLoader::loadOBJ_alt(std::vector<Mesh> &mesh_vec, const std::string & obj
         }
     }
 }
-
-/*
-void OBJLoader::parse_meshes(objl::Mesh objl_mesh)
-{
-    std::vector<unsigned int> vertices = objl_mesh.Indices;
-
-    std::vector<objl::Vertex> objl_vertices = objl_mesh.Vertices;
-
-
-
-
-
-}
-
- */

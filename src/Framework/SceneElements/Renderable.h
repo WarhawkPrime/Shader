@@ -13,19 +13,14 @@
 class Renderable : public Transform {
 public:
     Renderable();
-    //Renderable(ShaderProgram & shaderProgram, bool reverseWinding, std::string name);
 
     //Renderable with other loader
     Renderable(ShaderProgram & shaderProgram, std::string name);
 
     virtual ~Renderable();
 
-    //void render(ShaderProgram & shaderProgram);
 
     void render_t(ShaderProgram & shaderProgram);
-
-    //void createMeshes(OBJResult & objResult,glm::vec3 matDiff, glm::vec3 matSpec, GLfloat shininess);
-
     void createMaterials(std::string name);
 
 

@@ -32,30 +32,7 @@ void Camera::bind(ShaderProgram* shaderProgram) {
     shaderProgram->setUniform("camPos", getPosition());
 }
 
-/*
-Camera::Camera(float width, float height, float angle, float minDistance, float maxDistance) {
-
-    this->width = width;
-    this->height = height;
-    this->angle = angle;
-    this->minDistance = minDistance;
-    this->maxDistance = maxDistance;
-    this->target = this;
-}
-*/
-
-/*
-Camera::Camera(float width, float height, float angle, float minDistance, float maxDistance, Transform *target) {
-    this->width = width;
-    this->height = height;
-    this->angle = angle;
-    this->minDistance = minDistance;
-    this->maxDistance = maxDistance;
-    this->target = target;
-}
-*/
-
 
 Camera::~Camera() {
-    std::cout << "camera off" << std::endl;
+    //std::cout << "camera off" << std::endl;
 }

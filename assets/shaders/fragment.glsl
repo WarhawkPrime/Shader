@@ -42,17 +42,13 @@ struct SpotLight {
 
 in vec3 FragPos;
 in vec3 Normal;
-
-in vec3 lightDir;
 in vec3 viewDir;
-
 in vec2 TexCoords;
 
-uniform vec3 viewPos;
 
+//uniform structs.
 uniform PointLight pointLight;
 uniform SpotLight spotLight;
-
 uniform Material material;
 
 // ========== function prototypes ==========

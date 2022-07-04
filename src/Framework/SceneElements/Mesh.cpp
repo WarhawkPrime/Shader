@@ -8,14 +8,6 @@ void Mesh::render() {
     glBindVertexArray(0);
 }
 
-/*
-Mesh::Mesh(std::vector<Vertex> Vertexdata,std::vector<Index> Indexdata,std::vector<VertexAttribute> Attributes) {
-    this->vertexdata = Vertexdata;
-    this->indexdata = Indexdata;
-    this->attributes = Attributes;
-    setupMesh();
-}
-*/
 
 void Mesh::setupMesh(){
 
@@ -49,46 +41,9 @@ void Mesh::setupMesh(){
 
 }
 
-/*
-Mesh::Mesh(std::vector<Vertex> Vertexdata, std::vector<Index> Indexdata, std::vector<VertexAttribute> Attributes,
-           glm::vec3 matDiffuse, glm::vec3 matSpecular, GLfloat matShininess) {
-    this->vertexdata = Vertexdata;
-    this->indexdata = Indexdata;
-    this->attributes = Attributes;
-    this->matDiff = matDiffuse;
-    this->matSpec = matSpecular;
-    this->matShin = matShininess;
-    setupMesh();
-
-}
-*/
 
 void Mesh::rendering(ShaderProgram* shaderProgram) {
     glBindVertexArray(vaoID);
     glDrawElements(GL_TRIANGLES, indexdata.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
-
-    /*
-    GLint my_location_matDiffuse = glGetUniformLocation(shaderProgram->prog, "matDiffuse");
-    glProgramUniform3fv(shaderProgram->prog, my_location_matDiffuse, 1, &this->getMatDiff()[0]);
-    GLint my_location_matSpecular = glGetUniformLocation(shaderProgram->prog, "matSpecular");
-    glProgramUniform3fv(shaderProgram->prog, my_location_matSpecular, 1, &this->getMatSpec()[0]);
-    GLint my_location_matShininess = glGetUniformLocation(shaderProgram->prog, "matShininess");
-    glProgramUniform1f(shaderProgram->prog, my_location_matShininess, this->getMatShin());
-     */
-
-
 }
-/*
-const glm::vec3 &Mesh::getMatDiff() const {
-    return matDiff;
-}
-
-const glm::vec3 &Mesh::getMatSpec() const {
-    return matSpec;
-}
-
-GLfloat Mesh::getMatShin() const {
-    return matShin;
-}
-*/

@@ -19,41 +19,33 @@ bool Scene::init()
         m_assets.addShaderProgram("shader", AssetManager::createShaderProgram("assets/shaders/vertex.glsl", "assets/shaders/fragment.glsl"));
         m_shader = m_assets.getShaderProgram("shader");
 
-        /*
-        myMotorCycle = new Renderable(*this->m_shader,false,"cycle");
-        myMotorCycle->rotate(glm::quat(glm::vec3(glm::degrees(0.85),0,0)));
-        myMotorCycle->translate(glm::vec3(0,-0.25,0));
 
-        groundOBJ = new Renderable(*this->m_shader,false,"ground1");
-        */
-
+        //cycle initialisation
         cycle = std::make_shared<Renderable>(*this->m_shader, "cycle");
         cycle->rotate(glm::quat(glm::vec3(glm::degrees(0.85),0,0)));
         cycle->translate(glm::vec3(0,-0.0,0));
 
+        //ground initialisation
         ground = std::make_shared<Renderable>(*this->m_shader, "ground");
 
+        //follower camera initialisation
         followCam = std::make_shared<Camera>(10, 5, glm::radians(70.), 0.01, 1000, cycle);
         followCam->translate(glm::vec3(0, 10, 10));
+        followCam->setParent(cycle.get());
 
+        //free flying camera initialisation
         freeCam = std::make_shared<Camera>(10, 5, glm::radians(70.), 0.01, 1000, nullptr);
         freeCam->translate(glm::vec3(0, 5, 5));
+        freeCam->setParent(cycle.get());
 
         FreeCamActivated = false;
 
-        //myCamera = new Camera(10, 5, glm::radians(70.), 0.01, 1000,myMotorCycle);
-        //myFreeCamera = new Camera(10, 5, glm::radians(70.), 0.01, 1000, nullptr);
-        //myCamera->translate(glm::vec3(0, 10, 10));
-        //myFreeCamera->translate(glm::vec3(0, 5, 5));
-        //FreeCamActivated = false;
 
-
-        //std::make_shared<SpotLight>()
-
+        //splotlight initialisation
         slight = std::make_shared<SpotLight>(
                 glm::vec3(1.5, 0, 1),
                 glm::vec3(0.8, 0.8, 0.8),
-                glm::vec3(0.2, 0.2, 0.2),
+                glm::vec3(0.8, 0.8, 0.8),
                 glm::vec3(1.0, 1.0, 1.0) ,
                 spotDirection,
                 12.5f,
@@ -67,10 +59,11 @@ bool Scene::init()
 
         slight->setParent(cycle.get());
 
+        //point light initialisation
         plight = std::make_shared<PointLight>(
                 glm::vec3(0, 0, 20),
-                glm::vec3(0.3, 0.3, 0.3),
-                glm::vec3(0.5, 0.5, 0.5),
+                glm::vec3(0.6, 0.6, 0.6),
+                glm::vec3(0.6, 0.6, 0.6),
                 glm::vec3(1.0, 1.0, 1.0),
                 1.0f,
                 0.5f,
@@ -78,20 +71,6 @@ bool Scene::init()
                 );
 
         plight->setParent(cycle.get());
-
-        followCam->setParent(cycle.get());
-        freeCam->setParent(cycle.get());
-
-        //mySpotlight = new SpotLight(glm::vec3(1.5, 0, 1), glm::vec3(0.8, 0.8, 0.8),spotDirection,glm::cos(glm::radians(12.5f)),glm::cos(glm::radians(17.5f)),0.5f,0.05f,0.01f);
-        //mySpotlight->setParent(myMotorCycle);
-        //generelles Licht ist PointLight
-        //myLight = new PointLight(glm::vec3(0, 0, 20), glm::vec3(0.3, 0.3, 0.3),1.0f,0.5f,0.1f);
-        //myLight->setParent(myMotorCycle);
-        //myCamera->setParent(myMotorCycle);
-        //myFreeCamera->setParent(myMotorCycle);
-
-
-
 
 
         //initial opengl state
@@ -123,12 +102,12 @@ void Scene::render(float dt)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     m_shader->use();
 
+    //bind lights and send values to shader
     slight->bind(*this->m_shader);
     plight->bind(*this->m_shader);
 
-    //mySpotlight->bind(this->m_shader);
-    //myLight->bind(this->m_shader);
 
+    //bind chosen camera and send values to shader
     if (FreeCamActivated == true){
         freeCam->bind(this->m_shader);
     }
@@ -136,13 +115,9 @@ void Scene::render(float dt)
         followCam->bind(this->m_shader);
     }
 
-    //myMotorCycle->render(*this->m_shader);
-    //groundOBJ->render(*this->m_shader);
 
     ground->render_t(*this->m_shader);
     cycle->render_t(*this->m_shader);
-
-
 
 }
 
@@ -157,15 +132,20 @@ void Scene::update(float dt)
         if(m_window->getInput().getKeyState(Key::Q)== KeyState::Pressed){
             cycle->rotateLocal(glm::quat(glm::vec3(0,0,dt)));
             slight->rotateLocal(glm::quat(glm::vec3(0,0,dt)));
+
             glm::vec3 direction = slight->getXAxis();
-            slight->setDirection(glm::vec3(direction.x,direction.y,0));
+            glm::vec3 Ydirection = slight->getYAxis();
+            slight->setDirection(glm::vec3(direction.x,0,Ydirection.x));
 
         }
         else if(m_window->getInput().getKeyState(Key::E)== KeyState::Pressed){
             cycle->rotateLocal(glm::quat(glm::vec3(0,0,-dt)));
             slight->rotateLocal(glm::quat(glm::vec3(0,0,-dt)));
+
+
             glm::vec3 direction = slight->getXAxis();
-            slight->setDirection(glm::vec3(direction.x,direction.y,0));
+            glm::vec3 Ydirection = slight->getYAxis();
+            slight->setDirection(glm::vec3(direction.x,0,Ydirection.x));
         }
     }
     else if(m_window->getInput().getKeyState(Key::A)== KeyState::Pressed){
@@ -182,8 +162,11 @@ void Scene::update(float dt)
 
         cycle->rotateLocal(glm::quat(glm::vec3(0,0,dt)));
         slight->rotateLocal(glm::quat(glm::vec3(0,0,dt)));
+
+
         glm::vec3 direction = slight->getXAxis();
-        slight->setDirection(glm::vec3(direction.x,direction.y,0));
+        glm::vec3 Ydirection = slight->getYAxis();
+        slight->setDirection(glm::vec3(direction.x,0,Ydirection.x));
 
 
     }
@@ -191,8 +174,11 @@ void Scene::update(float dt)
 
         cycle->rotateLocal(glm::quat(glm::vec3(0,0,-dt)));
         slight->rotateLocal(glm::quat(glm::vec3(0,0,-dt)));
+
+
         glm::vec3 direction = slight->getXAxis();
-        slight->setDirection(glm::vec3(direction.x,direction.y,0));
+        glm::vec3 Ydirection = slight->getYAxis();
+        slight->setDirection(glm::vec3(direction.x,0,Ydirection.x));
 
 
     }
@@ -263,25 +249,3 @@ void Scene::onFrameBufferResize(int width, int height)
 
 }
 
-void Scene::calculateColor(float dt) {
-
-    if (colorChange)
-    {
-        time += dt;
-
-        if (time >= 1.0)
-            colorChange = false;
-    }
-    else if (!colorChange)
-    {
-        time -= dt;
-
-        if (time <= 0.0)
-            colorChange = true;
-    }
-
-}
-
-void Scene::changeSpotDirection() {
-    slight->getDirection();
-}

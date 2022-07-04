@@ -1,23 +1,7 @@
 #include "Renderable.h"
 
-/*
-void Renderable::render(ShaderProgram & shaderProgram) {
 
-    //glUniformMatrix4fv(projectionLoc,1,false,)
-    //glUniformMatrix4fv(viewLoc,1,false,)
-    glm::mat4 matrix = getCombinedMatrix();
-    //glm::vec3 pos = getCombinedPosition();
-    //std::cout << this->name  << " -  Rot of x: " << this->getRotation().x << " Rot of y:" << this->getRotation().y << " and z: " << this->getRotation().z << std::endl;
-    //glUniformMatrix4fv(modelLoc, 1, false, &matrix[0][0]);
-    shaderProgram.setUniform("model", matrix, false);
-    for(unsigned int i = 0; i < meshes.size(); i++){
-        meshes[i].rendering(&shaderProgram);
-    }
-
-}
-*/
-
-
+//render all meshes and set the textures
 void Renderable::render_t(ShaderProgram & sp) {
 
     glm::mat4 matrix = getCombinedMatrix();
@@ -39,59 +23,19 @@ void Renderable::render_t(ShaderProgram & sp) {
 
 
         sp.setUniform("material.shininess", mesh.get_material()->shininess);
-
-
-        std::cout << "multi: " << mesh.get_material()->texMulti << std::endl;
         sp.setUniform("material.texMulti", mesh.get_material()->texMulti);
 
         mesh.rendering(&sp);
     }
-
-    /*
-    for(unsigned int i = 0; i < meshes.size(); i++){
-        meshes[i].rendering(&shaderProgram);
-    }
-     */
-
 }
 
 
-/*
-void Renderable::createMeshes(OBJResult & objResult,glm::vec3 matDiff, glm::vec3 matSpec, GLfloat shininess){
-    std::vector<OBJMesh> objmeshes = objResult.objects[0].meshes;
-    for (int i = 0; i < objmeshes.size();i++){
-        std::vector<Vertex> vertices = objmeshes[i].vertices;
-        std::vector<Index> indices = objmeshes[i].indices;
-        std::vector<VertexAttribute> atts = objmeshes[i].atts;
-        Mesh mesh(vertices,indices,atts, matDiff,matSpec,shininess);
-        meshes.push_back(mesh);
-    }
-}
-*/
 
-
-Renderable::Renderable() {
+Renderable::Renderable()
+{
 
 
 }
-
-/*
-Renderable::Renderable(ShaderProgram & shaderProgram, bool reverseWinding, std::string name) {
-    this->name = name;
-    OBJResult objresult;
-    if (name.find("sphere") != std::string::npos){
-        objresult = OBJLoader::loadOBJ("assets/scenes/sphere.obj",false, false);
-    }
-    else if(name.find("ground") != std::string::npos){
-        objresult = OBJLoader::loadOBJ( "assets/models/ground_blender.obj", false, false);
-        this->createMeshes(objresult,glm::vec3(1, 0.6, 0.6),glm::vec3(0.5,0.5,0.5),60.);
-    }
-    else if(name.find("cycle") != std::string::npos){
-        objresult = OBJLoader::loadOBJ("assets/Light Cycle Textures/Light Cycle/cycle_blender.obj",false, false);
-        this->createMeshes(objresult,glm::vec3(0.8, 0.8, 1),glm::vec3(1,1,1),60.);
-    }
-}
-*/
 
 Renderable::Renderable(ShaderProgram &shaderProgram, std::string name)
 {
@@ -100,16 +44,10 @@ Renderable::Renderable(ShaderProgram &shaderProgram, std::string name)
     if(name.find("ground") != std::string::npos){
 
         OBJLoader::loadOBJ_alt(this->meshes, "assets/models/ground_blender.obj", false, false );
-
-        //objresult = OBJLoader::loadOBJ( "assets/models/ground_blender.obj", false, false);
-        //this->createMeshes(objresult,glm::vec3(1, 0.6, 0.6),glm::vec3(0.5,0.5,0.5),60.);
     }
     else if(name.find("cycle") != std::string::npos){
 
         OBJLoader::loadOBJ_alt(this->meshes, "assets/Light Cycle Textures/Light Cycle/cycle_blender.obj", false, false );
-
-        //objresult = OBJLoader::loadOBJ("assets/Light Cycle Textures/Light Cycle/cycle_blender.obj",false, false);
-        //this->createMeshes(objresult,glm::vec3(0.8, 0.8, 1),glm::vec3(1,1,1),60.);
     }
 
     this->createMaterials(this->name);
@@ -118,9 +56,6 @@ Renderable::Renderable(ShaderProgram &shaderProgram, std::string name)
     {
         m.setupMesh();
     }
-
-
-
 }
 
 void Renderable::createMaterials(std::string name)
@@ -146,15 +81,11 @@ void Renderable::createMaterials(std::string name)
         ground_materials.push_back(shr_ground_material);
 
         //setting material
-
         size_t mat_counter = 0;
         for (auto& m : this->meshes)
         {
             m.set_material(ground_materials.at(mat_counter));
         }
-
-
-
     }
     else if(name.find("cycle") != std::string::npos){
 

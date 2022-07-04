@@ -10,15 +10,7 @@ uniform mat4 view_m;
 uniform mat4 projection_m;
 
 uniform vec3 camPos;
-uniform vec3 lightpos_v;
 
-
-//changing colours
-//out vec3 colorVS;
-
-
-//lightpoint vectors
-//out vec3 toCamera;
 
 out vec3 lightDir;
 out vec3 viewDir;
@@ -34,10 +26,7 @@ void main(){
 
     gl_Position =  projection_m * view_m * model_m * vec4(pos, 1.0);
 
-
-    lightDir = normalize(lightpos_v - FragPos);
     viewDir = normalize(camPos - FragPos);
 
     TexCoords = vt;
-
 }

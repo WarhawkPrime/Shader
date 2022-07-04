@@ -1,4 +1,5 @@
-// OBJ_Loader.h - A Single Header OBJ Model Loader
+// OBJ_Loader.h - A Single Header OBJ Model Loader https://github.com/Bly7/OBJ-Loader
+//Edited by Dennis Wilpert
 
 #pragma once
 

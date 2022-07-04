@@ -4,17 +4,6 @@
 
 #include "PointLight.h"
 
-/*
-PointLight::PointLight(const glm::vec3& pos, const glm::vec3& lightColor, float c, float l, float q) : Transform(pos, glm::quat(0, 0, 0, 0), glm::vec3(1)) {
-
-    LightPos = pos;
-    this->lightColor = lightColor;
-    constant = c;
-    linear = l;
-    quadratic = q;
-
-}
-*/
 
 void PointLight::bind(ShaderProgram& shaderProgram) {
 
@@ -37,11 +26,6 @@ void PointLight::bind(ShaderProgram& shaderProgram) {
 
 }
 
-/*
-const glm::vec3 &PointLight::getColor() const {
-    return lightColor;
-}
- */
 
 float PointLight::getConstant() const {
     return constant;

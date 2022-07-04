@@ -5,20 +5,15 @@
 class SpotLight : public PointLight {
 public:
 
-    //SpotLight(const glm::vec3& pos, const glm::vec3& lightColor,const glm::vec3 Dir, float innerCone, float outerCone, float c, float l , float q);
-
-
     SpotLight(const glm::vec3 pos, const glm::vec3 lightColor,  const glm::vec3 lightAmbient, glm::vec3 lightSpec, const glm::vec3 Dir, float innerCone, float outerCone, float c, float l , float q)
         : direction(Dir), innerCone(innerCone), outerCone(outerCone), PointLight(pos, lightColor, lightAmbient, lightSpec, c, l, q) {}
 
 
-
-
     void bind(ShaderProgram& shaderProgram);
 
-    void setInnerCone(float innerCone);
+    //void setInnerCone(float innerCone);
 
-    void setOuterCone(float outerCone);
+    //void setOuterCone(float outerCone);
 
     const glm::vec3 &getSpotlightDirection() const;
 
